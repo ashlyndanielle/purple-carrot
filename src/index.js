@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter } from 'react-router-dom';
 
-import './index.scss';
+import './index.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 import App from './components/App';
 
