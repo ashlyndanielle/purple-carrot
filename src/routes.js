@@ -6,7 +6,7 @@ import Home from './components/Home/Home';
 import WhyPlants from './components/WhyPlants/WhyPlants';
 import HowItWorks from './components/HowItWorks/HowItWorks';
 import Menu from './components/Menu/Menu';
-import Plans from './components/Plan/Plan';
+import Plans from './components/Plans/Plans';
 import Tb12 from './components/Tb12/Tb12';
 import Gifts from './components/Gifts/Gifts';
 
