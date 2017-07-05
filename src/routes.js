@@ -5,6 +5,11 @@ import MainNavBar from './components/MainNavBar/MainNavBar';
 import Home from './components/Home/Home';
 import WhyPlants from './components/WhyPlants/WhyPlants';
 import HowItWorks from './components/HowItWorks/HowItWorks';
+import Menu from './components/Menu/Menu';
+import Plans from './components/Plan/Plan';
+import Tb12 from './components/Tb12/Tb12';
+import Gifts from './components/Gifts/Gifts';
+
 
 
 export default (
@@ -27,6 +32,29 @@ export default (
                 <HowItWorks />
             </div>
         ) } /> 
-        
+        <Route path='/menu' render={ () => (
+            <div>
+                <MainNavBar />
+                <Menu />
+            </div>
+        )} />
+        <Route path='/plans' render={ () => (
+            <div>
+                <MainNavBar />
+                <Plans />
+            </div>
+        )} />
+        <Route path='/Tb12' render={ () => (
+            <div>
+                <Tb12 />
+            </div>
+        )} />
+        <Route path='/gifts' render={ () => (
+            <div>
+                <MainNavBar />
+                <Gifts />
+            </div>
+        )} />
+
     </Switch>
 )
