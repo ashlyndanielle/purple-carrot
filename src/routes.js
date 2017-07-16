@@ -8,8 +8,7 @@ import WhyPlants from './components/WhyPlants/WhyPlants';
 import HowItWorks from './components/HowItWorks/HowItWorks';
 import Menu from './components/Menu/Menu';
 import Plans from './components/Plans/Plans';
-import Tb12 from './components/Tb12/Tb12';
-import Gifts from './components/Gifts/Gifts';
+// import Gifts from './components/Gifts/Gifts';
 
 
 
@@ -50,19 +49,13 @@ export default (
                 <Footer />
             </div>
         )} />
-        <Route path='/Tb12' render={ () => (
-            <div>
-                <Tb12 />
-                <Footer />
-            </div>
-        )} />
-        <Route path='/gifts' render={ () => (
+        {/*<Route path='/gifts' render={ () => (
             <div>
                 <MainNavBar />
                 <Gifts />
                 <Footer />
             </div>
-        )} />
+        )} />*/}
 
     </Switch>
 )

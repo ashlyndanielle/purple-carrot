@@ -1,0 +1,52 @@
+@import '../../globalVariables.scss';
+
+
+.header-main {
+    font-family: $font;
+    color: white;
+    text-transform: uppercase;
+    background-image: url(https://images.purplecarrot.com/uploads/content_chunk/section1_image/70/fe27_804a_WebBanner_Final_V3_ps_compress_w_rgb2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 55vh;
+
+    img {
+        height: 300px;
+        width: 470px;
+        object-fit: contain;
+        position: relative;
+        top: 17px;
+        left: 133px;
+    }
+
+    .hidden-xs {
+        p {
+            font-size: 26px;
+            line-height: 1.2em;
+            letter-spacing: 1px;
+            padding: 13px 18px;
+            position: relative;
+            left: 117px;
+            top: 30px;
+            width: 650px;
+            height: 60px;
+        }
+
+        .button {
+
+            padding: 10px 15px;
+            position: relative;
+            left: 136px;
+            top: 80px;
+            background-color: $purple;
+            border-style: none;
+            height: 60px;
+            width: 335px;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: white;
+        }
+    }
+}

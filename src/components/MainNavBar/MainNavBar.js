@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { NavBar } from 'react-bootstrap';
+
 import WhyPlants from '../WhyPlants/WhyPlants';
 import HowItWorks from '../HowItWorks/HowItWorks';
 import Menu from '../Menu/Menu';
@@ -13,7 +15,7 @@ class MainNavBar extends Component {
     render() {
         return (
             <div className='main-nav-container'>
-                <nav className='mobile'>
+                {/*<nav className='mobile'>
                     <div className='ham'>ham</div>
                     <div className='logo'>logo</div>
                 </nav>
@@ -27,23 +29,23 @@ class MainNavBar extends Component {
                         <p>login</p>
                         <p>sign up</p>
                     </div>
+                </nav>*/}
+
+                <nav className='desktop row'>
+                    <div className='menu-items'>
+                        <div className='col-lg-1'>logo</div>
+                        <p className='col-lg-1'>Why Plants</p>
+                        <p className='col-lg-1'>How It Works</p>
+                        <p className='col-lg-1'>Menu</p>
+                        <p className='col-lg-1'>Plans</p>
+                    </div>
+                    <div className='col-lg-4'></div>
+                    <div className='login'>
+                        <p className='col-lg-1'>login</p>
+                        <p className='col-lg-1'>sign up</p>
+                    </div>
                 </nav>
 
-                <nav className='desktop'>
-                    <div className='menu-items'>
-                        <div>logo</div>
-                        <p>Why Plants</p>
-                        <p>How It Works</p>
-                        <p>Menu</p>
-                        <p>Plans</p>
-                        <p>Tb12</p>
-                        <p>Gifts</p>
-                    </div>
-                    <div className='login'>
-                        <p>login</p>
-                        <p>sign up</p>
-                    </div>
-                </nav>
             </div>
         );
     }
