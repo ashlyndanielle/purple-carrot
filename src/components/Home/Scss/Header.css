@@ -1,12 +1,13 @@
 .header-main {
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
   color: white;
   text-transform: uppercase;
   background-image: url(https://images.purplecarrot.com/uploads/content_chunk/section1_image/70/fe27_804a_WebBanner_Final_V3_ps_compress_w_rgb2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 55vh; }
+  height: 528px; }
   .header-main img {
     height: 300px;
     width: 470px;
@@ -28,12 +29,17 @@
     padding: 10px 15px;
     position: relative;
     left: 136px;
-    top: 80px;
+    top: 78px;
     background-color: #973894;
     border-style: none;
-    height: 60px;
-    width: 335px;
+    height: 61px;
+    width: 325px;
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: white; }
+  .header-main .hidden-xs .button:hover {
+    text-decoration: none;
+    background-color: white;
+    color: #973894;
+    border: solid 1px #973894; }
