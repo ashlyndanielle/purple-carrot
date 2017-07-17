@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Power from './Power';
 import Promo from './Promo';
+import Recipes from './Recipes';
 
 import './Scss/Home.css';
 
@@ -13,6 +14,7 @@ class Home extends Component {
                 <Header />
                 <Power />
                 <Promo />
+                <Recipes />
             </div>
         );
     }

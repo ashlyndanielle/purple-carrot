@@ -1,0 +1,32 @@
+@import '../../globalVariables.scss';
+
+.recipes-main {
+    font-family: $font;
+    position: relative;
+
+    .header {
+        text-align: center;
+
+        h1 {
+            font-size: 44px;
+            font-weight: 600;
+            margin-top: 50px;
+            margin-bottom: 40px;
+            color: black;
+            letter-spacing: 1px;
+            z-index: 999;
+        }
+
+        .green-bolt {
+            position: absolute;
+            top: -20px;
+            z-index: -10;
+        }
+
+        .header-text {
+            font-size: 22px;
+            margin-top: 55px;
+        }
+        
+    }
+}

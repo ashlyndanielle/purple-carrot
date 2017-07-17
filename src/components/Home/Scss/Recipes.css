@@ -1,0 +1,20 @@
+.recipes-main {
+  font-family: "Poppins", sans-serif;
+  position: relative; }
+  .recipes-main .header {
+    text-align: center; }
+    .recipes-main .header h1 {
+      font-size: 44px;
+      font-weight: 600;
+      margin-top: 50px;
+      margin-bottom: 40px;
+      color: black;
+      letter-spacing: 1px;
+      z-index: 999; }
+    .recipes-main .header .green-bolt {
+      position: absolute;
+      top: -20px;
+      z-index: -10; }
+    .recipes-main .header .header-text {
+      font-size: 22px;
+      margin-top: 55px; }
