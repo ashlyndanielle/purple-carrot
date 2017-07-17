@@ -49,13 +49,6 @@ export default (
                 <Footer />
             </div>
         )} />
-        {/*<Route path='/gifts' render={ () => (
-            <div>
-                <MainNavBar />
-                <Gifts />
-                <Footer />
-            </div>
-        )} />*/}
 
     </Switch>
 )

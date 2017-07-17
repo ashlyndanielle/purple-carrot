@@ -14,7 +14,7 @@ class Power extends Component {
             <div className='power-main row'>
                 <div className='col-sm-offset-1 col-sm-5'>
                     <h1>Nutrition Delivered.</h1>
-                    <div className='bullets'>
+                    <div className='bullets row'>
                         <div className="bulletpoint col-sm-12">
                             <div className='img-wrapper col-sm-3'>
                                 <img className='icons' src={create} alt="we create icon"/>
@@ -41,7 +41,7 @@ class Power extends Component {
                         </div>
                     </div>
                 </div>
-                <div className='col-lg-6'>
+                <div className='col-lg-6 img-artichoke'>
                     <img className='artichoke' src={artichoke} alt="box image"/>
                 </div>
             </div>

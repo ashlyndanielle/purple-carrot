@@ -12,9 +12,24 @@
       letter-spacing: 1px;
       z-index: 999; }
     .recipes-main .header .green-bolt {
-      position: absolute;
-      top: -20px;
+      position: relative;
+      margin-top: -150px;
       z-index: -10; }
     .recipes-main .header .header-text {
+      font-size: 20px;
+      margin-top: 45px; }
+  .recipes-main .menu-button {
+    text-align: center;
+    margin-top: 40px; }
+    .recipes-main .menu-button .button {
+      padding: 7px 18px;
+      background-color: #99CA3C;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
       font-size: 22px;
-      margin-top: 55px; }
+      border: 2px solid #99ca3c; }
+    .recipes-main .menu-button .button:hover {
+      background-color: white;
+      color: #99ca3c;
+      text-decoration: none; }
