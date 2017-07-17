@@ -3,11 +3,12 @@
 
 .header-main {
     font-family: $font;
-    font-weight: 600;
+    // font-weight: 600;
     color: white;
     text-transform: uppercase;
     background-image: url(https://images.purplecarrot.com/uploads/content_chunk/section1_image/70/fe27_804a_WebBanner_Final_V3_ps_compress_w_rgb2.jpg);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     height: 528px;

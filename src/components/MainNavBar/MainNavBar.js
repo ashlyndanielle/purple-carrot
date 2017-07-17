@@ -6,8 +6,6 @@ import WhyPlants from '../WhyPlants/WhyPlants';
 import HowItWorks from '../HowItWorks/HowItWorks';
 import Menu from '../Menu/Menu';
 import Plans from '../Plans/Plans';
-import Tb12 from '../Tb12/Tb12';
-import Gifts from '../Gifts/Gifts';
 
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 

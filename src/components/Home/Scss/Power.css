@@ -1,0 +1,28 @@
+.power-main {
+  font-family: "Poppins", sans-serif; }
+  .power-main .title {
+    font-weight: 700;
+    font-size: 48px;
+    color: black;
+    letter-spacing: 1px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    text-transform: uppercase; }
+  .power-main .bullets .bulletpoint {
+    margin-top: 30px;
+    display: flex;
+    font-size: 22px; }
+  .power-main .bullets .img-wrapper {
+    width: 40%;
+    display: inline-block;
+    padding-bottom: 20px; }
+  .power-main .bullets p {
+    margin-top: 10px;
+    width: 400px; }
+  .power-main .bullets strong {
+    font-weight: 700; }
+  .power-main .artichoke {
+    width: 94%;
+    position: relative;
+    left: 57px;
+    bottom: 186px; }
