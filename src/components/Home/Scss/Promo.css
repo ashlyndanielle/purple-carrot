@@ -1,0 +1,30 @@
+.promo-main {
+  font-family: "Poppins", sans-serif;
+  background-color: #698962;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  text-transform: uppercase; }
+  .promo-main .purple-bolt {
+    height: 65%; }
+  .promo-main .promo-text1-container {
+    margin-left: 20px;
+    font-size: 32px; }
+  .promo-main .button {
+    background-color: #973894;
+    color: white;
+    font-size: 22px;
+    margin-left: 28px;
+    padding: 17.5px 23px;
+    letter-spacing: 1px;
+    border: 2px solid #973894; }
+  .promo-main .button:hover {
+    text-decoration: none;
+    background-color: white;
+    color: #973894; }
+  .promo-main .bold {
+    font-weight: 700; }
+  .promo-main .promo-text2 {
+    font-size: 22px;
+    margin-left: 17px; }

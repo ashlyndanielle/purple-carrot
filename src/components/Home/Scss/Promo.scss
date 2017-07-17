@@ -1,0 +1,45 @@
+@import '../../globalVariables.scss';
+
+.promo-main {
+    font-family: $font;
+    background-color: #698962;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    text-transform: uppercase;
+
+    .purple-bolt {
+        height: 65%;
+    }
+
+    .promo-text1-container {
+        margin-left: 20px;
+        font-size: 32px;
+    }
+
+    .button {
+        background-color: $purple;
+        color: white;
+        font-size: 22px;
+        margin-left: 28px;
+        padding: 17.5px 23px;
+        letter-spacing: 1px;
+        border: 2px solid $purple;
+    }
+
+    .button:hover {
+        text-decoration: none;
+        background-color: white;
+        color: $purple;
+    }
+    
+    .bold {
+        font-weight: 700;
+    }
+
+    .promo-text2 {
+        font-size: 22px;
+        margin-left: 17px;
+    }
+}

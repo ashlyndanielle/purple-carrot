@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Header from './Header';
 import Power from './Power';
+import Promo from './Promo';
 
 import './Scss/Home.css';
 
@@ -11,6 +12,7 @@ class Home extends Component {
             <div className='home-main'>
                 <Header />
                 <Power />
+                <Promo />
             </div>
         );
     }
