@@ -1,10 +1,5 @@
 .main-nav-container {
   font-family: "Poppins", sans-serif;
-  height: 90px;
   /*****************
       MOBILE VERSION
     ******************/ }
-  .main-nav-container .mobile {
-    display: flex;
-    padding: 20px 100px;
-    justify-content: space-between; }

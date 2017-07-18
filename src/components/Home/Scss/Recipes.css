@@ -1,7 +1,12 @@
+@import url(~slick-carousel/slick/slick.css);
+@import url(~slick-carousel/slick/slick-theme.css);
 .recipes-main {
   font-family: "Poppins", sans-serif;
   position: relative;
   margin-bottom: 45px; }
+  .recipes-main .top-half {
+    padding-bottom: 35px;
+    border: 1px solid red; }
   .recipes-main .header {
     text-align: center; }
     .recipes-main .header h1 {
