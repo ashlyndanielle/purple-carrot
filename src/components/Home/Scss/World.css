@@ -1,8 +1,42 @@
 .world-main {
-  position: relative; }
+  position: relative;
+  font-family: "Poppins", sans-serif; }
   .world-main .ham-wrapper {
     width: 100%;
-    z-index: 99; }
+    z-index: 99;
+    position: relative;
+    height: 100%; }
+    .world-main .ham-wrapper .ham-icon {
+      max-height: 500px;
+      position: absolute;
+      right: 0;
+      top: 150px; }
+  .world-main .text-side h1 {
+    font-weight: 600;
+    font-size: 44px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    line-height: 50px; }
+  .world-main .text-side .text {
+    margin-bottom: 10px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-right: 50px; }
+  .world-main .text-side .bold {
+    font-weight: 600; }
+  .world-main .icon-bullets {
+    margin-top: 50px;
+    margin-right: 50px;
+    text-align: center; }
+    .world-main .icon-bullets img {
+      height: 60px; }
+    .world-main .icon-bullets p {
+      margin-top: 25px;
+      font-size: 20px;
+      margin-bottom: 277px;
+      letter-spacing: 1px; }
   .world-main .wedge {
     z-index: -19; }
   .world-main .yellow {

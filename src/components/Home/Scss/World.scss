@@ -1,15 +1,68 @@
+@import '../../globalVariables.scss';
+
 .world-main {
     position: relative;
+    font-family: $font;
 
     .ham-wrapper {
         width: 100%;
         z-index: 99;
+        position: relative;
+        height: 100%;
+
+        .ham-icon {
+            max-height: 500px;
+            position: absolute;
+            right: 0;
+            top: 150px;
+        }
+    }
+
+    .text-side {
+        
+        h1 {
+            font-weight: 600;
+            font-size: 44px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+            line-height: 50px;
+        }
+
+        .text {
+            margin-bottom: 10px;
+            line-height: 24px;
+            letter-spacing: 1px;
+            font-size: 20px;
+            margin-right: 50px;
+        }
+
+        .bold {
+            font-weight: 600;
+        }
+    }
+
+    .icon-bullets {
+        margin-top: 50px;
+        margin-right: 50px;
+        text-align: center;
+        
+        img {
+            height: 60px;
+        }
+
+        p {
+            margin-top: 25px;
+            font-size: 20px;
+            margin-bottom: 277px;
+            letter-spacing: 1px;
+        }
     }
 
     .wedge {
         z-index: -19;
     }
-    
+
     .yellow {
         position: absolute;
         bottom: 0;
