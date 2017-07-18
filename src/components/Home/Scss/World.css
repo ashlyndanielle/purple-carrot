@@ -1,0 +1,11 @@
+.world-main {
+  position: relative; }
+  .world-main .ham-wrapper {
+    width: 100%;
+    z-index: 99; }
+  .world-main .wedge {
+    z-index: -19; }
+  .world-main .yellow {
+    position: absolute;
+    bottom: 0;
+    right: 0; }

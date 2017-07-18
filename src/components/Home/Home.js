@@ -5,6 +5,7 @@ import Power from './Power';
 import Promo from './Promo';
 import Recipes from './Recipes';
 import Yoga from './Yoga';
+import World from './World';
 
 import './Scss/Home.css';
 
@@ -17,6 +18,7 @@ class Home extends Component {
                 <Promo />
                 <Recipes />
                 <Yoga />
+                <World />
             </div>
         );
     }
