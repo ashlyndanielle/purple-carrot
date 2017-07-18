@@ -1,0 +1,10 @@
+.articles-main {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center; }
+  .articles-main .articles img {
+    width: 200px;
+    height: 100px; }

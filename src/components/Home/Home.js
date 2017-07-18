@@ -7,6 +7,7 @@ import Recipes from './Recipes';
 import Yoga from './Yoga';
 import World from './World';
 import Satisfy from './Satisfy';
+import Articles from './Articles';
 
 import './Scss/Home.css';
 
@@ -21,6 +22,7 @@ class Home extends Component {
                 <Yoga />
                 <World />
                 <Satisfy />
+                <Articles />
             </div>
         );
     }
