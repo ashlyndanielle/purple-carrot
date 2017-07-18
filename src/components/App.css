@@ -52,7 +52,9 @@ table {
     padding: 20px 100px;
     justify-content: space-between; }
 
-.footer-main .social-media {
-  text-align: center; }
-  .footer-main .social-media .social-links {
-    display: inline-block; }
+.footer-main {
+  background-color: #222222; }
+  .footer-main .social-media {
+    text-align: center; }
+    .footer-main .social-media .social-links {
+      display: inline-block; }
