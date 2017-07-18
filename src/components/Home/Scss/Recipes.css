@@ -1,6 +1,7 @@
 .recipes-main {
   font-family: "Poppins", sans-serif;
-  position: relative; }
+  position: relative;
+  margin-bottom: 45px; }
   .recipes-main .header {
     text-align: center; }
     .recipes-main .header h1 {

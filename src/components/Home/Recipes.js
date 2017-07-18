@@ -18,7 +18,7 @@ class Recipes extends Component {
                             <p>Each week, our chefs create new dishes inspired by seasonal flavors that will tempt, delight, and energize.</p>
                         </div>
                     </div>
-                    <div className='menu-button col-sm-2 col-sm-offset-5'>
+                    <div className='menu-button col-sm-4 col-sm-offset-4'>
                         <Link to='/menu' className='button'>see this week's menu</Link>
                     </div>
                 </div>
