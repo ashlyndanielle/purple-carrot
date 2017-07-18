@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import facebook from '../../Images/footer/facebookIcon.png';
 import instagram from '../../Images/footer/instagramIcon.png';
@@ -32,8 +33,16 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-            <div className='links'></div>
-            <div className='copywrite'></div>
+            <div className='links'>
+                <Link className='page-links' to='/why-plants'>Why Plants</Link>
+                <Link className='page-links' to='/how-it-works'>How it Works</Link>
+                <Link className='page-links' to='/menu'>Menu</Link>
+                <Link className='page-links' to='/plans'>Plans</Link>
+            </div>
+            <div className='links'>
+                <div className='page-links non-links'>plant-based recipes</div>
+                <div className='page-links non-links'>vegan food pyramid</div>
+            </div>
         </div>
     );
 };

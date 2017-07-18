@@ -2,6 +2,7 @@
 
 .footer-main {
     background-color: #222222;
+    font-family: $font;
 
     .social-media {
         text-align: center;
@@ -9,6 +10,34 @@
 
         .social-links {
             display: inline-block;
+            margin: 60px 20px;
+        }
+
+        .social-links:hover {
+            background: $purple;
+            border-radius: 50%;
+        }
+    }
+
+    .links {
+        text-align: center;
+        padding-bottom: 20px;
+
+        .page-links {
+            margin: 0 40px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .page-links:hover {
+            text-decoration: none;
+            color: $purple;
+        }
+
+        .non-links {
+            display: inline-block;
+            padding-bottom: 40px;
+            margin: 0 39px;
         }
     }
 }

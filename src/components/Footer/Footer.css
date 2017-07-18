@@ -1,6 +1,25 @@
 .footer-main {
-  background-color: #222222; }
+  background-color: #222222;
+  font-family: "Poppins", sans-serif; }
   .footer-main .social-media {
     text-align: center; }
     .footer-main .social-media .social-links {
-      display: inline-block; }
+      display: inline-block;
+      margin: 60px 20px; }
+    .footer-main .social-media .social-links:hover {
+      background: #973894;
+      border-radius: 50%; }
+  .footer-main .links {
+    text-align: center;
+    padding-bottom: 20px; }
+    .footer-main .links .page-links {
+      margin: 0 40px;
+      color: white;
+      text-transform: uppercase; }
+    .footer-main .links .page-links:hover {
+      text-decoration: none;
+      color: #973894; }
+    .footer-main .links .non-links {
+      display: inline-block;
+      padding-bottom: 40px;
+      margin: 0 39px; }
