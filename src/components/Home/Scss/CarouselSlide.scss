@@ -1,8 +1,24 @@
 @import '../../globalVariables.scss';
 
 .carousel-slide-main {
-    .slider-img {
-        width: 400px;
-        height: 400px;
+
+    .recipe-slider {
+        transform: skew(-5.5deg);
+        width: 130%;
+        position: relative;
+        left: -300px;
+
+        .slide-img {
+            height: 420px;
+            width: 600px;
+            margin: 0 5px;
+
+            img {
+                // transform: skew(5.5deg);
+                object-fit: contain;
+                height: 100%;
+                width: 100%;
+            }
+        }
     }
 }

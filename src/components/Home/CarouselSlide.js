@@ -8,6 +8,8 @@ import scallops from '../../Images/homeView/seared-scallops.jpg';
 
 import Slider from 'react-slick';
 
+import './Scss/CarouselSlide.css';
+
 class CarouselSlide extends Component {
     render() {
 
@@ -27,24 +29,28 @@ class CarouselSlide extends Component {
                 <Slider {...settings} className="recipe-slider">
                     <div>
                         <div className="slide-img">
-                             <img src={skewers} alt=""/>
+                             <img className='image' src={skewers} alt=""/>
                         </div>
                     </div>
                     <div>
                         <div className="slide-img">
-                            <img src={jackfruit} alt=''/>
+                            <img className='image' src={jackfruit} alt=''/>
                         </div>
                     </div>
                     <div>
                         <div className="slide-img">
-                            <img src={cauliflower} alt=''/>
+                            <img className='image' src={cauliflower} alt=''/>
                         </div>
                     </div>
                     <div>
-                        <img src={tofu} alt=''/>
+                        <div className="slide-img">
+                            <img className='image' src={tofu} alt=''/>
+                        </div>
                     </div>
                     <div>
-                        <img src={scallops} alt=''/>
+                        <div className="slide-img">
+                            <img className='image' src={scallops} alt=''/>
+                        </div>
                     </div>
                 </Slider>
             </div>
