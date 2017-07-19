@@ -2,16 +2,19 @@
   width: 100vw;
   overflow: hidden; }
   .carousel-slide-main .recipe-slider {
-    transform: skew(-5.5deg);
+    transform: skew(-8.5deg);
     width: 130%;
     position: relative;
-    left: -285px;
-    overflow: hidden; }
+    left: -265px;
+    overflow: hidden;
+    height: 420px; }
     .carousel-slide-main .recipe-slider .slide-img {
       height: 420px;
-      width: 600px;
-      margin: 0 5px; }
+      width: 700px;
+      margin: 0 20px; }
       .carousel-slide-main .recipe-slider .slide-img img {
         object-fit: contain;
         height: 100%;
         width: 100%; }
+      .carousel-slide-main .recipe-slider .slide-img .words {
+        color: black; }
