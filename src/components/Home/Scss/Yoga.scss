@@ -3,6 +3,8 @@
 .yoga-main {
     font-family: $font;
     position: relative;
+    width: 100vw;
+    margin: 0;
 
     h1 {
         text-transform: uppercase;
@@ -54,7 +56,6 @@
     }
 
     .green {
-        width: 100vw;
 
         img {
             width: 100%;
@@ -63,6 +64,7 @@
 
     .wedge {
         z-index: -19;
-        margin-top: -235px;
+        margin-top: -248px;
+        padding: 0;
     }
 }

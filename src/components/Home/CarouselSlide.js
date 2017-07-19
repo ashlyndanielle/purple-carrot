@@ -26,7 +26,7 @@ class CarouselSlide extends Component {
 
         return (
             <div className='carousel-slide-main'>
-                <Slider {...settings} className="recipe-slider">
+                 <Slider {...settings} className="recipe-slider">
                     <div>
                         <div className="slide-img">
                              <img className='image' src={skewers} alt=""/>
@@ -52,7 +52,7 @@ class CarouselSlide extends Component {
                             <img className='image' src={scallops} alt=''/>
                         </div>
                     </div>
-                </Slider>
+                </Slider> 
             </div>
         );
     }

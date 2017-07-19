@@ -74,3 +74,7 @@ table {
       display: inline-block;
       padding-bottom: 40px;
       margin: 0 39px; }
+
+body {
+  width: 100vw;
+  overflow-x: hidden; }

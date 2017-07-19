@@ -1,6 +1,7 @@
 .world-main {
   position: relative;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  padding: 0; }
   .world-main .ham-wrapper {
     width: 100%;
     z-index: 99;

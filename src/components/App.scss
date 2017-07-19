@@ -43,6 +43,13 @@ table {
 }
 
 
+
+
 @import './MainNavBar/MainNavBar.scss';
 @import './Footer/Footer.scss';
 // @import './Home/Scss/Header.scss';
+
+body {
+	width: 100vw;
+	overflow-x: hidden;
+}

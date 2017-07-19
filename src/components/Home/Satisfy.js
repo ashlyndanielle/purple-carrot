@@ -9,7 +9,7 @@ const Satisfy = () => {
     return (
         <div className='satisfy-main'>
             <div className='words row'>
-                <img src={hunger} alt="" className='col-sm-offset-2 col-sm-8'/>
+                <img src={hunger} alt=""/>
             </div>
             <div className='button-wrapper'>
                 <Link to='/menu' className='button'>TRY IT NOW</Link>
