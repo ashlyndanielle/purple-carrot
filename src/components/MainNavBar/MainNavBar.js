@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 import { Navbar, NavItem, NavDropdown, MenuItem, Nav } from 'react-bootstrap';
 
@@ -13,7 +14,16 @@ import logo from '../../Images/mainNavBar/purpleCarrotLogo.svg'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 class MainNavBar extends Component {
+
+    componentDidMount() {
+        axios.get('http://localhost:3001/getUsers')
+            .then( response => {
+                console.log("THE RESPONSE", response);
+            })
+    }
+
     render() {
+
         return (
             <div className='main-nav-container'>
                 <Navbar className='navbar-styles' fixedTop collapseOnSelect>
@@ -42,11 +52,11 @@ class MainNavBar extends Component {
                         </Nav>
                         <Nav pullRight>
                             <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-                                <MenuItem eventKey={3.1}>Action</MenuItem>
+                                <MenuItem eventKey={3.1} href="http://localhost:3001/auth">Login</MenuItem>
                                 <MenuItem divider />
                                 <MenuItem eventKey={3.2}>Another action</MenuItem>
                                 <MenuItem eventKey={3.3}>Something else here</MenuItem>
-                                <MenuItem eventKey={3.3}>Separated link</MenuItem>
+                                <MenuItem eventKey={3.3} href="http://localhost:3001/auth/logout">Logout</MenuItem>
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>
