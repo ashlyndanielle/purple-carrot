@@ -34,6 +34,10 @@
     .yoga-main .yoga-mom img {
       margin-left: -80px;
       transform: skew(5.5deg) scale(1.05); }
+  .yoga-main .green {
+    width: 100vw; }
+    .yoga-main .green img {
+      width: 100%; }
   .yoga-main .wedge {
     z-index: -19;
-    margin-top: -485px; }
+    margin-top: -235px; }

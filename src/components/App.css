@@ -42,10 +42,12 @@ table {
   border-spacing: 0; }
 
 .main-nav-container {
-  font-family: "Poppins", sans-serif;
-  /*****************
-      MOBILE VERSION
-    ******************/ }
+  font-family: "Poppins", sans-serif; }
+  .main-nav-container .navbar-styles {
+    background-color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 30px; }
 
 .footer-main {
   background-color: #222222;

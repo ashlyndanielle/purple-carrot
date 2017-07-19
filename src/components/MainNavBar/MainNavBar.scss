@@ -1,12 +1,13 @@
 @import '../globalVariables.scss';
 
 .main-nav-container {
-    font-family: $font;
+  font-family: $font;
 
-    img {
+    .navbar-styles {
+      background-color: white;
+      border: none;
+      padding-top: 10px;
+      padding-bottom: 30px;
+
     }
-    /*****************
-      MOBILE VERSION
-    ******************/
-
 }

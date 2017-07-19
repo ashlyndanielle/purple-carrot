@@ -16,7 +16,7 @@ class MainNavBar extends Component {
     render() {
         return (
             <div className='main-nav-container'>
-                <Navbar className='navbar-styles' collapseOnSelect>
+                <Navbar className='navbar-styles' fixedTop collapseOnSelect>
                     <Navbar.Header>
                         <Navbar.Brand>
                             <Link to="/">
@@ -28,16 +28,16 @@ class MainNavBar extends Component {
                     <Navbar.Collapse>
                         <Nav>
                             <NavItem eventKey={1}>
-                                <Link to='/why-plants'>Why Plants</Link>
+                                <Link to='/why-plants' className='nav-links'>Why Plants</Link>
                             </NavItem>
                             <NavItem eventKey={2}>
-                                <Link to='/how-it-works'>How it works</Link>
+                                <Link to='/how-it-works' className='nav-links'>How it works</Link>
                             </NavItem>
                             <NavItem eventKey={3}>
-                                <Link to='/menu'>Menu</Link>
+                                <Link to='/menu' className='nav-links'>Menu</Link>
                             </NavItem>          
                             <NavItem eventKey={4}>
-                                <Link to='/plans'>Plans</Link>
+                                <Link to='/plans' className='nav-links'>Plans</Link>
                             </NavItem>
                         </Nav>
                         <Nav pullRight>

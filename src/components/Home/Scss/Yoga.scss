@@ -53,8 +53,16 @@
         }
     }
 
+    .green {
+        width: 100vw;
+
+        img {
+            width: 100%;
+        }
+    }
+
     .wedge {
         z-index: -19;
-        margin-top: -485px;
+        margin-top: -235px;
     }
 }
