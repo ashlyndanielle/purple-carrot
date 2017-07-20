@@ -28,13 +28,13 @@ const Header = () => {
 
 
 
-            <div className='desktop hidden-xs'>
-                <div className='title'>
+            <div className='desktop hidden-xs row'>
+                <div className='title col-sm-10 col-sm-offset-2'>
                     <p>Nature creates.</p>
                     <p>We deliver.  You cook.</p>
                 </div>
-                <p className='sub-title'>SELELCT YOUR PLAN AND WE'LL DO THE REST</p>
-                <div className='large-button'>
+                <p className='sub-title col-sm-10 col-sm-offset-2'>SELELCT YOUR PLAN AND WE'LL DO THE REST</p>
+                <div className='large-button col-sm-10 col-sm-offset-2'>
                     <Link to='/plans' className='plans-link'>
                         VIEW PLANS
                     </Link>
