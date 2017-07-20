@@ -4,10 +4,10 @@ import axios from 'axios';
 
 import { Navbar, NavItem, NavDropdown, MenuItem, Nav } from 'react-bootstrap';
 
-import WhyPlants from '../WhyPlants/WhyPlants';
-import HowItWorks from '../HowItWorks/HowItWorks';
-import Menu from '../Menu/Menu';
-import Plans from '../Plans/Plans';
+// import WhyPlants from '../WhyPlants/WhyPlants';
+// import HowItWorks from '../HowItWorks/HowItWorks';
+// import Menu from '../Menu/Menu';
+// import RecipesMain from '../Recipes/RecipesMain';
 
 import logo from '../../Images/mainNavBar/purpleCarrotLogo.svg'
 
@@ -47,7 +47,7 @@ class MainNavBar extends Component {
                                 <Link to='/menu' className='nav-links'>Menu</Link>
                             </NavItem>          
                             <NavItem eventKey={4}>
-                                <Link to='/plans' className='nav-links'>Plans</Link>
+                                <Link to='/recipes' className='nav-links'>Recipes</Link>
                             </NavItem>
                         </Nav>
                         <Nav pullRight>

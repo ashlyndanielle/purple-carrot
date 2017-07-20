@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import PlanDetail from './PlanDetail';
+import RecipesDetails from './RecipesDetails';
 
-import './Scss/Plans.css';
+import './Scss/RecipesMain.css';
 
-class Plans extends Component {
+class RecipesMain extends Component {
     constructor(props) {
         super(props);
 
@@ -15,7 +15,7 @@ class Plans extends Component {
     }
 
     componentDidMount () {
-        axios.get('http://localhost:3001/getplans')
+        axios.get('http://localhost:3001/getRecipes')
             .then( response => {
                 // console.log('response', response)
                 this.setState({
@@ -28,7 +28,7 @@ class Plans extends Component {
         
         let mealPlan = this.state.mealPlans.map((meal, i) => {
             return(
-                <PlanDetail 
+                <RecipesDetails 
                     id={meal.id}
                     name={meal.name}
                     key={i} 
@@ -48,4 +48,4 @@ class Plans extends Component {
     }
 }
 
-export default Plans;
+export default RecipesMain;

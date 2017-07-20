@@ -79,8 +79,8 @@ massive(config.herokuConnect).then((dbInstance) => {
         dbInstance.get_users().then( response => res.status(200).send(response))
     })
 
-    app.get('/getPlans', (req, res, next) => {
-        dbInstance.get_plans().then( response => res.status(200).send(response))
+    app.get('/getRecipes', (req, res, next) => {
+        dbInstance.get_recipes().then( response => res.status(200).send(response))
     })
 
     // ENDPOINTS RELATED TO LOGIN

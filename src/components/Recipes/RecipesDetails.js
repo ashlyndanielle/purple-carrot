@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PlanDetail = (props) => {
+const RecipesDetails = (props) => {
     return (
         <div >
             <p>Id: {props.id}</p>
@@ -9,4 +9,4 @@ const PlanDetail = (props) => {
     );
 };
 
-export default PlanDetail;
+export default RecipesDetails;

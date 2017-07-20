@@ -5,9 +5,9 @@ import MainNavBar from './components/MainNavBar/MainNavBar';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import WhyPlants from './components/WhyPlants/WhyPlants';
-import HowItWorks from './components/HowItWorks/HowItWorks';
+// import HowItWorks from './components/HowItWorks/HowItWorks';
 import Menu from './components/Menu/Menu';
-import Plans from './components/Plans/Plans';
+import RecipesMain from './components/Recipes/RecipesMain';
 // import Gifts from './components/Gifts/Gifts';
 
 
@@ -28,13 +28,13 @@ export default (
                 <Footer />
             </div>
         )} />
-        <Route path='/how-it-works' render={ () =>(
+        {/* <Route path='/how-it-works' render={ () =>(
             <div>
                 <MainNavBar />
                 <HowItWorks />
                 <Footer />
             </div>
-        ) } /> 
+        ) } />  */}
         <Route path='/menu' render={ () => (
             <div>
                 <MainNavBar />
@@ -42,10 +42,10 @@ export default (
                 <Footer />
             </div>
         )} />
-        <Route path='/plans' render={ () => (
+        <Route path='/recipes' render={ () => (
             <div>
                 <MainNavBar />
-                <Plans />
+                <RecipesMain />
                 <Footer />
             </div>
         )} />
