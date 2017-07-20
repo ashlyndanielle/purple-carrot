@@ -1,14 +1,14 @@
 @import '../../globalVariables.scss';
-@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Sarina');
 
 .works-header-main {
+    color: white;
 
 
     .mobile {
-        font-family: 'Satisfy';
-        color: white;
+        font-family: 'Sarina';
         font-size: 36px;
-        letter-spacing: 2px;
+        // letter-spacing: 2px;
         line-height: 1.3em;
         padding-left: 30px;
         padding-top: 28px;
@@ -24,12 +24,14 @@
         
         .p-text {
             margin-top: 40px;
+            color: black;
+
+            p {
+                text-align: center;
+                font-size: 24px;
+            }
         }
         
-        p {
-            text-align: center;
-            font-size: 24px;
-        }
 
         .plans-button{
             text-align: center;
@@ -39,8 +41,55 @@
 
             .plans-link {
                 background-color: $purple;
+                font-size: 20px;
+                letter-spacing: 2px;
                 color: white;
                 padding: 10px 100px;
+            }
+        }
+    }
+
+
+    .desktop {
+        padding-left: 60px;
+        padding-top: 40px;
+        background-image: url('../../../Images/howItWorks/eggplant_desktop.jpg');
+        background-position: center;
+        background-size: cover;
+
+        .title {
+            font-family: 'Sarina';
+            font-size: 66px;
+            // letter-spacing: 2px;
+            line-height: 1.3em;
+        }
+
+        .sub-title {
+            font-family: $font;
+            letter-spacing: 1px;
+            padding-top: 30px;
+            font-size: 24px;
+        }
+
+        .large-button {
+            font-family: $font;
+            margin-top: 100px;
+            padding-bottom: 100px;
+
+            .plans-link {
+                color: white;
+                text-align: center;
+                background-color: $purple;
+                padding: 10px 30px;
+                font-size: 24px;
+                letter-spacing: 1px;
+            }
+
+            .plans-link:hover {
+                color: $purple;
+                background-color: white;
+                border: 2px solid $purple;
+                text-decoration: none;
             }
         }
     }
