@@ -27,7 +27,7 @@ class MainNavBar extends Component {
         return (
             <div className='main-nav-container'>
                 <Navbar className='navbar-styles' fixedTop collapseOnSelect>
-                    <Navbar.Header>
+                    <Navbar.Header className='vertical-align'>
                         <Navbar.Brand>
                             <Link to="/">
                                 <img src={logo} alt=""/>
@@ -35,7 +35,7 @@ class MainNavBar extends Component {
                         </Navbar.Brand>
                         <Navbar.Toggle />
                     </Navbar.Header>
-                    <Navbar.Collapse>
+                    <Navbar.Collapse className='vertical-align'>
                         <Nav>
                             <NavItem eventKey={1}>
                                 <Link to='/why-plants' className='nav-links'>Why Plants</Link>
@@ -51,11 +51,10 @@ class MainNavBar extends Component {
                             </NavItem>
                         </Nav>
                         <Nav pullRight>
-                            <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+                            <NavDropdown eventKey={3} title="Account" id="basic-nav-dropdown">
                                 <MenuItem eventKey={3.1} href="http://localhost:3001/auth">Login</MenuItem>
                                 <MenuItem divider />
-                                <MenuItem eventKey={3.2}>Another action</MenuItem>
-                                <MenuItem eventKey={3.3}>Something else here</MenuItem>
+                                <MenuItem eventKey={3.2}>Account Settings</MenuItem>
                                 <MenuItem eventKey={3.3} href="http://localhost:3001/auth/logout">Logout</MenuItem>
                             </NavDropdown>
                         </Nav>

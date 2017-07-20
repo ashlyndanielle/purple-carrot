@@ -6,14 +6,14 @@ import './Scss/Header.css';
 const Header = () => {
     return (
         <div className='works-header-main'>
-            <div className='mobile hidden-lg'>
+            <div className='mobile hidden-lg hidden-md'>
                 <div>
                     <p>Nature creates.</p>
                     <p>We deliver.</p>
                     <p>You cook.</p>
                 </div>
             </div>
-            <div className='mobile-bottom hidden-lg'>
+            <div className='mobile-bottom hidden-lg hidden-md'>
                 <div className='p-text'>
                     <p>SELECT YOUR PLAN</p>
                     <p>AND WE'LL DO THE REST.</p>

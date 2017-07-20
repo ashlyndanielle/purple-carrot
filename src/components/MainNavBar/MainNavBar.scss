@@ -9,5 +9,25 @@
       padding-top: 10px;
       padding-bottom: 30px;
 
+      .vertical-align {
+        height: 100%;
+
+        img {
+          width: 200px;
+        }
+      }
+
+      .nav-links {
+        color: black;
+      }
+
+      .nav-links:hover {
+        text-decoration: none;
+        color: $purple;
+      }
+
+      #basic-nav-dropdown {
+        color: $purple;
+      }
     }
 }

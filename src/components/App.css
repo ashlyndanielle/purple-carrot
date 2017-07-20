@@ -48,6 +48,17 @@ table {
     border: none;
     padding-top: 10px;
     padding-bottom: 30px; }
+    .main-nav-container .navbar-styles .vertical-align {
+      height: 100%; }
+      .main-nav-container .navbar-styles .vertical-align img {
+        width: 200px; }
+    .main-nav-container .navbar-styles .nav-links {
+      color: black; }
+    .main-nav-container .navbar-styles .nav-links:hover {
+      text-decoration: none;
+      color: #973894; }
+    .main-nav-container .navbar-styles #basic-nav-dropdown {
+      color: #973894; }
 
 .footer-main {
   background-color: #222222;
