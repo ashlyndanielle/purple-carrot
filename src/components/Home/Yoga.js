@@ -33,7 +33,10 @@ const Yoga = () => {
             </div>
             <div className='col-sm-6 col-sm-offset-1 yoga'>
                 <div className='yoga-mom'>
-                    <img src={mom} alt=""/>
+                    <div>
+                        <img src={mom} alt=""/>
+
+                    </div>
                 </div>
             </div>
             <div className='col-sm-12 hidden-xs wedge'>

@@ -35,6 +35,7 @@
     width: 75%;
     overflow: hidden; }
     .yoga-main .yoga-mom img {
+      width: 100%;
       margin-left: -80px;
       transform: skew(5.5deg) scale(1.05); }
   .yoga-main .green img {
