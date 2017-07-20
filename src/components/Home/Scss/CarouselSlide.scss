@@ -14,7 +14,7 @@
 
         .slide-img {
             height: 420px;
-            width: 700px;
+            width: auto;
             margin: 0 20px;
 
             img {
@@ -22,10 +22,14 @@
                 object-fit: contain;
                 height: 100%;
                 width: 100%;
+                position: relative;
+                z-index: -10;
             }
 
             .words {
                 color: black;
+                position: relative;
+                z-index: 999;
             }
         }
     }

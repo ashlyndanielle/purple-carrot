@@ -9,11 +9,10 @@ class Header extends Component {
     render() {
         return (
             <div className='header-main section-1'>
-                <img src={plants} alt='plants power yum' />
+                <img src={plants} alt='plants power yum'/>
                 <div className='hidden-xs'>
                     <p>cook delicious, power-packed meals.  feel amazing.</p>
                     <Link to="/menu" className='button'>Start purple carrot</Link>
-                    {/*<section onClick={() => this.props.history.push('/menu')}>start purple carrot</section>*/}
                 </div>
             </div>
         );

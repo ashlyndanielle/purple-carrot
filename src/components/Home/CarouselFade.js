@@ -19,7 +19,15 @@ class CarouselFade extends Component {
         return (
             <div className='carousel-fade-main'>
                 <Slider {...settings} className='slider'>
-                    
+                    <div className='slides'>
+                        
+                    </div>
+                    <div className='slides'>
+
+                    </div>
+                    <div className='slides'>
+
+                    </div>
                 </Slider>
             </div>
         );

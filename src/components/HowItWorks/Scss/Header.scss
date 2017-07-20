@@ -1,0 +1,47 @@
+@import '../../globalVariables.scss';
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+.works-header-main {
+
+
+    .mobile {
+        font-family: 'Satisfy';
+        color: white;
+        font-size: 36px;
+        letter-spacing: 2px;
+        line-height: 1.3em;
+        padding-left: 30px;
+        padding-top: 28px;
+        
+        height: 190px;
+        background-image: url('../../../Images/howItWorks/eggplant_mobile.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .mobile-bottom {
+        font-family: $font;
+        
+        .p-text {
+            margin-top: 40px;
+        }
+        
+        p {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .plans-button{
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+
+            .plans-link {
+                background-color: $purple;
+                color: white;
+                padding: 10px 100px;
+            }
+        }
+    }
+}

@@ -30,46 +30,56 @@ class CarouselSlide extends Component {
                  <Slider {...settings} className="recipe-slider">
                     <div>
                         <div className="slide-img">
-                             <img className='image' src={skewers} alt=""/>
-                             <div className='words'>
-                                <h1>Coffee Teriyaki Skewers</h1>
-                                <h2>with Citrus Edamame Salad</h2>
-                             </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="slide-img">
-                            <img className='image' src={jackfruit} alt=''/>
-                            <div className='words'>
-                                <h1>Spicy Jackfruit and Bell Pepper Fajitas</h1>
-                                <h2>with Lime Crema</h2>
+                            <div>
+                                <img className='image' src={skewers} alt=""/>
+                                <div className='words'>
+                                    <h1>Coffee Teriyaki Skewers</h1>
+                                    <h2>with Citrus Edamame Salad</h2>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div className="slide-img">
-                            <img className='image' src={cauliflower} alt=''/>
-                            <div className='words'>
-                                <h1>Cauliflower L'Orange</h1>
-                                <h2>with Beets and Fresh Herbs</h2>
+                            <div>
+                                <img className='image' src={jackfruit} alt=''/>
+                                <div className='words'>
+                                    <h1>Spicy Jackfruit and Bell Pepper Fajitas</h1>
+                                    <h2>with Lime Crema</h2>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div className="slide-img">
-                            <img className='image' src={tofu} alt=''/>
-                            <div className='words'>
-                                <h1>Sesame Crusted Tofu Steaks</h1>
-                                <h2>with Chermoula Sauce</h2>
+                            <div>
+                                <img className='image' src={cauliflower} alt=''/>
+                                <div className='words'>
+                                    <h1>Cauliflower L'Orange</h1>
+                                    <h2>with Beets and Fresh Herbs</h2>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div className="slide-img">
-                            <img className='image' src={scallops} alt=''/>
-                            <div className='words'>
-                                <h1>Seared 'Scallops'</h1>
-                                <h2>with Stir-Fried Farro and Spicy Broccolini</h2>
+                            <div>
+                                <img className='image' src={tofu} alt=''/>
+                                <div className='words'>
+                                    <h1>Sesame Crusted Tofu Steaks</h1>
+                                    <h2>with Chermoula Sauce</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="slide-img">
+                            <div>
+                                <img className='image' src={scallops} alt=''/>
+                                <div className='words'>
+                                    <h1>Seared 'Scallops'</h1>
+                                    <h2>with Stir-Fried Farro and Spicy Broccolini</h2>
+                                </div>
                             </div>
                         </div>
                     </div>
