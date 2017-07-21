@@ -12,9 +12,6 @@ CREATE TABLE users (
 -- VALUES ('1', 'ashTest');
 
 
-
-
-
 CREATE TABLE recipes (
     id SERIAL PRIMARY KEY,
     Price DECIMAL,
@@ -28,6 +25,18 @@ CREATE TABLE recipes (
     Carbs INTEGER,
     Protein INTEGER
 );
+
+
+
+
+CREATE TABLE cart (
+    id SERIAL PRIMARY KEY,
+    recipesid INTEGER NOT NULL REFERENCES recipes(id),
+    userid INTEGER NOT NULL REFERENCES users(id),
+    quantity INTEGER
+)
+
+
 
 
 INSERT INTO recipes (Price, Name, ImageFull, Thumbnail, Description, Servings, Calories, Fat, Carbs, Protein) 
@@ -62,3 +71,7 @@ INSERT INTO recipes (Price, Name, ImageFull, Thumbnail, Description, Servings, C
 VALUES (11.33, 'Maple Tempeh with Lime Couscous Salad and Minty Plums', 'https://s3-us-west-2.amazonaws.com/purplecarrot/maple-tempeh-full.jpg', 'https://s3-us-west-2.amazonaws.com/purplecarrot/maple-tempeh-thumbnail.jpg', 'The flavors in this dish may seem adventurous to some, with sweet maple, fresh lime, and bright mint, but we can assure you that they come together for a delicious finish. The tempeh gets a sweet and savory marinade before crisping up in a skillet. Be sure to keep an eye on the tempeh, the sugars could caramelize quickly- they’re ready when there’s a golden brown coating on each piece. The lime couscous is seriously flavorful, and if you love lime, add a little of the zest to the salad- we won’t tell.', 2, 840, 36, 100, 35);
 INSERT INTO recipes (Price, Name, ImageFull, Thumbnail, Description, Servings, Calories, Fat, Carbs, Protein) 
 VALUES (11.33, 'Thrive Sweet Pepper and Hemp Seed Pesto Pizza with Broccoli and Basil', 'https://s3-us-west-2.amazonaws.com/purplecarrot/hemp-pizza-full.jpg', 'https://s3-us-west-2.amazonaws.com/purplecarrot/hemp-pizza-thumbnail.jpg', 'Fresh broccoli and basil come together to create the perfect topping for a crispy mung bean pizza crust. The pesto recipe comes from professional Ironman triathlete Brendan Brazier’s Thrive Energy cookbook — it’ll have you praising the power of green! Along with red peppers and hemp seeds, you’ll love this flatbread-style pizza for its hearty flavors and health-boosting benefits.', 2, 700, 26, 85, 37);
+
+
+
+
