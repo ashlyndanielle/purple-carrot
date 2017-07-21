@@ -37,11 +37,9 @@ class MainNavBar extends Component {
     render() {
 
         let isLoggedIn = false;
-        let accountSettings = false;
 
         if (this.state.loggedInUser && this.state.loggedInUser.userid) {
             isLoggedIn = <MenuItem eventKey={3.2} href="http://localhost:3001/auth/logout">Logout</MenuItem>
-            accountSettings = <MenuItem eventKey={3.1}>Account Settings</MenuItem>
         } else {
             isLoggedIn = <MenuItem eventKey={3.1} href="http://localhost:3001/auth">Login</MenuItem>;
         }
