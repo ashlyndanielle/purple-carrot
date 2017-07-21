@@ -23,7 +23,7 @@ class Recipes extends Component {
                         </div>
                     </div>
                     <div className='menu-button col-sm-4 col-sm-offset-4'>
-                        <Link to='/menu' className='button'>see this week's menu</Link>
+                        <Link to='/menu' className='button'>select from our recipes</Link>
                     </div>
                 </div>
 

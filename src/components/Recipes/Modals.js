@@ -50,6 +50,7 @@ class Modals extends Component {
         return (
             <ButtonToolbar className='modal-main'>
                 <Button onClick={this.showModal} style={buttonBackground} className='button-styles'>
+                    <div className='overlay'></div>
                 </Button>
 
                 <Modal bsSize={'lg'}
@@ -71,7 +72,7 @@ class Modals extends Component {
                         <Button onClick={this.hideModal}>Close</Button>
                     </Modal.Footer>
                 </Modal>
-      </ButtonToolbar>
+            </ButtonToolbar>
         );
     }
 }

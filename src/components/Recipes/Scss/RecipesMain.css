@@ -1,2 +1,4 @@
 .plans-main {
   margin-top: 90px; }
+  .plans-main .thumbnails-container {
+    width: 30%; }

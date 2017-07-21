@@ -12,7 +12,7 @@ class Header extends Component {
                 <img src={plants} alt='plants power yum'/>
                 <div className='hidden-xs'>
                     <p>cook delicious, power-packed meals.  feel amazing.</p>
-                    <Link to="/menu" className='button'>Start purple carrot</Link>
+                    <Link to="/recipes" className='button'>Start purple carrot</Link>
                 </div>
             </div>
         );

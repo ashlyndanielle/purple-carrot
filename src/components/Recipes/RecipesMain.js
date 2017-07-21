@@ -58,6 +58,7 @@ class RecipesMain extends Component {
             return(
                 <Modals 
                     meal={meal}
+                    className='thumbnails'
                 />
             )
         })
@@ -65,8 +66,9 @@ class RecipesMain extends Component {
 
         return (
             <div className='plans-main'>
-                 {/* { mealPlan } */}
-                 { recipeModal }
+                 <div className='thumbnails-container'>
+                     { recipeModal }
+                </div>
             </div>
         );
     }

@@ -15,7 +15,7 @@ class Promo extends Component {
                         <span className='bold'>get $20 off</span> your first order
                     </div>
                 </div>
-                <Link to='/menu' className='button'>try it now</Link>
+                <Link to='/recipes' className='button'>try it now</Link>
                 <div className='promo-text2'>
                     <div>use code</div>
                     <div className='bold'>PURPLE20</div>
