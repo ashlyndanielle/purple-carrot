@@ -99,13 +99,14 @@ massive(config.herokuConnect).then((dbInstance) => {
     { successRedirect: 'http://localhost:3000/recipes'}));
     // #3: this gives me the user that is logged in
     app.get('/auth/me', function(req, res) {
-    if (!req.user) return res.status(200).send('No one logged in!');
-    res.status(200).send(req.user);
+        console.log('am i working ', req.user)
+        if (!req.user) return res.status(200).send('');
+        res.status(200).send(req.user);
     })
     // #4
     app.get('/auth/logout', function(req, res) {
-    req.logout();
-    res.redirect('http://localhost:3000/');
+        req.logout();
+        res.redirect('http://localhost:3000/');
     })
 });
 

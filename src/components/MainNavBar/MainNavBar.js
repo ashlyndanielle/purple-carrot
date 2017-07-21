@@ -18,31 +18,53 @@ class MainNavBar extends Component {
     super(props);
 
         this.state = {
-            loggedInUser: {}
+            // loggedInUser: {}
+            loggedInUser: '',
+            userIsLoggedIn: false
         }
     }
 
     // this is getting my user object and displaying it
     componentDidMount() {
         // this is sending back the user that is logged in
-        axios.get('http://localhost:3001/auth/me')
+        axios.get('/auth/me')
             .then( response => {
                 console.log("YOU'RE A USER NOW!", response);
-                this.setState({
-                    loggedInUser: response.data
-                })
+                if (response.data === '') {
+                    this.setState({
+                        loggedInUser: null,
+                        userIsLoggedIn: false
+                    })
+                } else {
+                    this.setState({
+                        loggedInUser: response.data,
+                        userIsLoggedIn: true
+                    })
+                }
             })
     }
 
     render() {
 
-        let isLoggedIn = false;
+        const loggedIn = (
+                <NavDropdown eventKey={5} title="Account" id="basic-nav-dropdown">
+                    <MenuItem eventKey={3.2} href="http://localhost:3001/auth/logout">Logout</MenuItem>
+                    <MenuItem eventKey={3.2}>
+                        <Link to='/shoppingcart' className='nav-links'>Shopping Cart</Link>
+                    </MenuItem>
+                </NavDropdown>
+    )
+        const loggedOut= (<MenuItem eventKey={5.1} href="http://localhost:3001/auth">Login</MenuItem>)
 
-        if (this.state.loggedInUser && this.state.loggedInUser.userid) {
-            isLoggedIn = <MenuItem eventKey={3.2} href="http://localhost:3001/auth/logout">Logout</MenuItem>
-        } else {
-            isLoggedIn = <MenuItem eventKey={3.1} href="http://localhost:3001/auth">Login</MenuItem>;
-        }
+        // let isLoggedIn = false;
+
+        // if (this.state.loggedInUser && this.state.loggedInUser.userid) {
+        //     console.log('user is logged in', this.state.loggedInUser)
+        //     isLoggedIn = <MenuItem eventKey={3.2} href="http://localhost:3001/auth/logout">Logout</MenuItem>
+        // } else {
+        //     console.log('user is logged out', this.state.loggedInUser)
+        //     isLoggedIn = <MenuItem eventKey={3.1} href="http://localhost:3001/auth">Login</MenuItem>;
+        // }
 
         return (
             <div className='main-nav-container'>
@@ -63,21 +85,29 @@ class MainNavBar extends Component {
                             <NavItem eventKey={2}>
                                 <Link to='/how-it-works' className='nav-links'>How it works</Link>
                             </NavItem>
-                            <NavItem eventKey={3}>
+                            {/* <NavItem eventKey={3}>
                                 <Link to='/menu' className='nav-links'>Menu</Link>
-                            </NavItem>          
+                            </NavItem>           */}
                             <NavItem eventKey={4}>
                                 <Link to='/recipes' className='nav-links'>Recipes</Link>
                             </NavItem>
                         </Nav>
                         <Nav pullRight>
-                            <NavDropdown eventKey={3} title="Account" id="basic-nav-dropdown">
-                                {isLoggedIn}
+                                { this.state.userIsLoggedIn 
+                                    ? 
+                                        loggedIn
+                                    : 
+                                        loggedOut
+                                }
+
                                 
-                                {/* <MenuItem divider />  
+                            {/* </NavItem>
+                            <NavDropdown eventKey={3} title="Account" id="basic-nav-dropdown">
+                                  {isLoggedIn}  
+                                 <MenuItem divider />  
                                 <MenuItem eventKey={3.1}>Account Settings</MenuItem>
-                                <MenuItem eventKey={3.2} href="http://localhost:3001/auth/logout">Logout</MenuItem> */}
-                            </NavDropdown>
+                                <MenuItem eventKey={3.2} href="http://localhost:3001/auth/logout">Logout</MenuItem> 
+                             </NavDropdown>  */}
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

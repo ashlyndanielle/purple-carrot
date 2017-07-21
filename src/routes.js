@@ -8,6 +8,7 @@ import WhyPlants from './components/WhyPlants/WhyPlants';
 import HowItWorks from './components/HowItWorks/HowItWorks';
 import Menu from './components/Menu/Menu';
 import RecipesMain from './components/Recipes/RecipesMain';
+import ShoppingCart from './components/ShoppingCart/ShoppingCartMain';
 // import Gifts from './components/Gifts/Gifts';
 
 
@@ -46,6 +47,13 @@ export default (
             <div>
                 <MainNavBar />
                 <RecipesMain />
+                <Footer />
+            </div>
+        )} />
+        <Route path='/shoppingcart' render={ () => (
+            <div>
+                <MainNavBar />
+                <ShoppingCart />
                 <Footer />
             </div>
         )} />
