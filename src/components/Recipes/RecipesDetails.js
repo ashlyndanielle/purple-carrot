@@ -2,9 +2,10 @@ import React from 'react';
 
 const RecipesDetails = (props) => {
     return (
-        <div >
-            <p>Id: {props.id}</p>
+        <div className='details-main'>
+            {/* <img src={} alt=""/> */}
             <p>Name: {props.name}</p>
+
         </div>
     );
 };

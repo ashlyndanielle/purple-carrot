@@ -42,22 +42,27 @@ massive(config.herokuConnect).then((dbInstance) => {
         clientSecret: config.auth0.clientSecret,
         callbackURL:  config.auth0.callbackUrl
     },
+
+    // profile is the user profile
     function(accessToken, refreshToken, extraParams, profile, done) {
         console.log("Profile returned from Auth0", profile);
+
+        // when you send in parameters to you database it thinks it's an array so you must use brackets...maybe
         // This is where we will check if the user exists in our database.
         // If it does, return that user in the done at the bottom
         // Else, fire a create_user query to input that user into your database, and then return that user
-
-        // if (user) {
-        //     done(null, user)
-        // } else {
-        //     db.create_user([profile.identities[0].user_id, profile.displayName]).then(function(err, user) {
-        //         done(null, user[0])
-        //     })
-        // }
-
-
-        done(null, profile)
+        dbInstance.get_user_by_id([profile.identities[0].user_id])
+            .then((user) => {
+                if (user[0]) {
+                    done(null, user[0]);
+                } else {
+                    // this originally will return the entire user table so by adding RETURNING * into the create_user query it only returns that user
+                    dbInstance.create_user(profile.identities[0].user_id, profile.displayName)
+                        .then((user) => {
+                            done(null, user[0])
+                        })
+                }
+            })
     }
     ));
 
@@ -83,13 +88,16 @@ massive(config.herokuConnect).then((dbInstance) => {
         dbInstance.get_recipes().then( response => res.status(200).send(response))
     })
 
+
+
+
     // ENDPOINTS RELATED TO LOGIN
-    // #1
+    // #1: this sends off to authentication
     app.get('/auth', passport.authenticate('auth0'));
-    // #2
+    // #2: this redirects back to my recipes page
     app.get('/auth/callback', passport.authenticate('auth0', 
-    { successRedirect: 'http://localhost:3000/'}));
-    // #3
+    { successRedirect: 'http://localhost:3000/recipes'}));
+    // #3: this gives me the user that is logged in
     app.get('/auth/me', function(req, res) {
     if (!req.user) return res.status(200).send('No one logged in!');
     res.status(200).send(req.user);

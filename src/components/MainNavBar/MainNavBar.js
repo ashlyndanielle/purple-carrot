@@ -14,15 +14,37 @@ import logo from '../../Images/mainNavBar/purpleCarrotLogo.svg'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 class MainNavBar extends Component {
+    constructor(props) {
+    super(props);
 
+        this.state = {
+            loggedInUser: {}
+        }
+    }
+
+    // this is getting my user object and displaying it
     componentDidMount() {
-        axios.get('http://localhost:3001/getUsers')
+        // this is sending back the user that is logged in
+        axios.get('http://localhost:3001/auth/me')
             .then( response => {
-                console.log("THE RESPONSE", response);
+                console.log("YOU'RE A USER NOW!", response);
+                this.setState({
+                    loggedInUser: response.data
+                })
             })
     }
 
     render() {
+
+        let isLoggedIn = false;
+        let accountSettings = false;
+
+        if (this.state.loggedInUser && this.state.loggedInUser.userid) {
+            isLoggedIn = <MenuItem eventKey={3.2} href="http://localhost:3001/auth/logout">Logout</MenuItem>
+            accountSettings = <MenuItem eventKey={3.1}>Account Settings</MenuItem>
+        } else {
+            isLoggedIn = <MenuItem eventKey={3.1} href="http://localhost:3001/auth">Login</MenuItem>;
+        }
 
         return (
             <div className='main-nav-container'>
@@ -52,10 +74,11 @@ class MainNavBar extends Component {
                         </Nav>
                         <Nav pullRight>
                             <NavDropdown eventKey={3} title="Account" id="basic-nav-dropdown">
-                                <MenuItem eventKey={3.1} href="http://localhost:3001/auth">Login</MenuItem>
-                                <MenuItem divider />
-                                <MenuItem eventKey={3.2}>Account Settings</MenuItem>
-                                <MenuItem eventKey={3.3} href="http://localhost:3001/auth/logout">Logout</MenuItem>
+                                {isLoggedIn}
+                                
+                                {/* <MenuItem divider />  
+                                <MenuItem eventKey={3.1}>Account Settings</MenuItem>
+                                <MenuItem eventKey={3.2} href="http://localhost:3001/auth/logout">Logout</MenuItem> */}
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>

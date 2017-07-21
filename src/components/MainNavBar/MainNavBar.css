@@ -16,3 +16,5 @@
       color: #973894; }
     .main-nav-container .navbar-styles #basic-nav-dropdown {
       color: #973894; }
+  .main-nav-container .logged-in {
+    display: none; }

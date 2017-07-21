@@ -10,14 +10,22 @@ class RecipesMain extends Component {
         super(props);
 
         this.state = {
-            mealPlans: []
+            mealPlans: [],
+            loggedIn: {}
         }
     }
 
     componentDidMount () {
+        // this sets loggedin as the user object returned from auth0
+        axios.get('http://localhost:3001/auth/me')
+            .then( response => {
+                this.setState({
+                    loggedIn: response.data
+                })
+            })
+        // this is my database call to get my recipes
         axios.get('http://localhost:3001/getRecipes')
             .then( response => {
-                // console.log('response', response)
                 this.setState({
                     mealPlans: response.data
                 })
@@ -29,8 +37,16 @@ class RecipesMain extends Component {
         let mealPlan = this.state.mealPlans.map((meal, i) => {
             return(
                 <RecipesDetails 
-                    id={meal.id}
+                    price={meal.price}
                     name={meal.name}
+                    imageFull={meal.imagefull}
+                    thumbnail={meal.thumbnail}
+                    description={meal.description}
+                    servings={meal.servings}
+                    calories={meal.calories}
+                    fat={meal.fat}
+                    carbs={meal.carbs}
+                    protein={meal.protein}
                     key={i} 
                 />
                 // <div key={i}>ID: {meal.id} -- NAME: {meal.name}</div>

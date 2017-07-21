@@ -1,14 +1,16 @@
 DROP TABLE IF EXISTS users, recipes;
 
 
+-- userid is auth0 id
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY ,
+    userid text, 
+    displayName TEXT
+);
 
-CREATE TABLE users (id integer, displayName text);
+-- INSERT INTO users (userid, displayName)
+-- VALUES ('1', 'ashTest');
 
-INSERT INTO users (id, displayName)
-VALUES (1, 'ashTest');
-
-INSERT INTO users (id, displayName)
-VALUES (2, 'gus');
 
 
 
