@@ -17,15 +17,18 @@
     width: 100%;
     padding: 0; }
   .power-main .hidden-sm .top-half {
-    height: 500px;
-    background: url("../../../Images/homeView/artichoke.jpg");
-    background-size: cover;
-    background-position: center center; }
+    height: 385px;
+    background: url("../../../Images/homeView/artichoke.jpg") no-repeat;
+    background-size: contain;
+    background-position: center bottom; }
     .power-main .hidden-sm .top-half .overlay {
-      background-color: rgba(101, 31, 108, 0.5);
+      background-color: rgba(101, 31, 108, 0.2);
       width: 100%;
       height: 100%; }
     .power-main .hidden-sm .top-half h1 {
-      font-size: 20px;
+      font-size: 32px;
       display: block;
-      text-align: center; }
+      text-align: center;
+      padding-top: 40px;
+      letter-spacing: 1px;
+      font-weight: 700; }

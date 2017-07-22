@@ -51,7 +51,7 @@ class Power extends Component {
                 <div className='hidden-sm hidden-md hidden-lg hidden-xl'>
                     <div className='top-half'>
                         <div className='overlay'>
-                            <h1>Nutrition Delivered</h1>
+                            <h1>Nutrition <br/>Delivered.</h1>
                         </div>
                     </div>
                     <div className='bottom-half'>
