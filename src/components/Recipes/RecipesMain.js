@@ -12,7 +12,7 @@ class RecipesMain extends Component {
 
         this.state = {
             mealPlans: [],
-            loggedIn: {}
+            loggedIn: {},
         }
     }
 
@@ -31,6 +31,7 @@ class RecipesMain extends Component {
                     mealPlans: response.data
                 })
             })
+        // I think this is where I'll do my put request?
     }
 
     render() {
