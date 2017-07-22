@@ -2,11 +2,18 @@
 
 .modal-main {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: space-around;
+
     .button-styles {
         height: 200px;
         width: 200px;
         background-size: cover;
         padding: 0;
+        // display: inline-flex;
     }
 
     .overlay {
