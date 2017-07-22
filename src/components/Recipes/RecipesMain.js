@@ -57,7 +57,8 @@ class RecipesMain extends Component {
 
         let recipeModal = this.state.mealPlans.map((meal, i) => {
             return(
-                <Modals 
+                <Modals
+                    key={i}
                     meal={meal}
                     className='thumbnails'
                 />

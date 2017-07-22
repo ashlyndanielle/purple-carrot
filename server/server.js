@@ -88,10 +88,10 @@ massive(config.herokuConnect).then((dbInstance) => {
         dbInstance.get_recipes().then( response => res.status(200).send(response))
     })
 
-    // this one below is unfinished
-    app.put('/addtocart', (req, res, next) => {
-        dbInstance.post_cart().then( response => res.status(200).send(response))
-    })
+    
+    // app.put('/addtocart', (req, res, next) => {
+    //     dbInstance.post_cart().then( response => res.status(200).send(response))
+    // })
 
 
 

@@ -4,7 +4,8 @@
     margin-top: 90px;
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
+    justify-content: center;
+    width: 100%;
     overflow: hidden;
 
     .thumbnails-container {
@@ -12,7 +13,10 @@
         margin: 10px;
     }
 
-    // .thumbnails {
-    //     width: 100%
-    // }
+    .thumbnails {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
 }

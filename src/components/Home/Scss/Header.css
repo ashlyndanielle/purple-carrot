@@ -1,46 +1,80 @@
 .header-main {
   margin-top: 90px;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  text-transform: uppercase;
-  background-image: url(https://images.purplecarrot.com/uploads/content_chunk/section1_image/70/fe27_804a_WebBanner_Final_V3_ps_compress_w_rgb2.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  height: 528px; }
-  .header-main img {
-    height: 300px;
-    width: 470px;
-    object-fit: contain;
-    position: relative;
-    top: 17px;
-    left: 133px; }
-  .header-main .hidden-xs p {
-    font-size: 26px;
-    line-height: 1.2em;
-    letter-spacing: 1px;
-    padding: 13px 18px;
-    position: relative;
-    left: 117px;
-    top: 30px;
-    width: 650px;
-    height: 60px; }
-  .header-main .hidden-xs .button {
-    padding: 12px 15px;
-    position: relative;
-    left: 136px;
-    top: 78px;
-    background-color: #973894;
-    border-style: none;
-    height: 61px;
-    width: 325px;
-    font-size: 24px;
+  font-family: "Poppins", sans-serif; }
+  .header-main .hidden-xs {
+    color: white;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    color: white; }
-  .header-main .hidden-xs .button:hover {
-    text-decoration: none;
-    background-color: white;
-    color: #973894;
-    border: solid 1px #973894; }
+    background-image: url(https://images.purplecarrot.com/uploads/content_chunk/section1_image/70/fe27_804a_WebBanner_Final_V3_ps_compress_w_rgb2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 528px; }
+    .header-main .hidden-xs img {
+      height: 300px;
+      width: 470px;
+      object-fit: contain;
+      position: relative;
+      top: 17px;
+      left: 133px; }
+    .header-main .hidden-xs .large-text p {
+      font-size: 26px;
+      line-height: 1.2em;
+      letter-spacing: 1px;
+      padding: 13px 18px;
+      position: relative;
+      left: 117px;
+      top: 30px;
+      width: 650px;
+      height: 60px; }
+    .header-main .hidden-xs .large-text .button {
+      padding: 12px 15px;
+      position: relative;
+      left: 136px;
+      top: 78px;
+      background-color: #973894;
+      border-style: none;
+      height: 61px;
+      width: 325px;
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: white; }
+    .header-main .hidden-xs .large-text .button:hover {
+      text-decoration: none;
+      background-color: white;
+      color: #973894;
+      border: solid 1px #973894; }
+  .header-main .hidden-sm {
+    text-transform: uppercase; }
+    .header-main .hidden-sm .image-container {
+      background: url(https://images.purplecarrot.com/uploads/content_chunk/section1_image/70/fe27_804a_WebBanner_Final_V3_ps_compress_w_rgb2.jpg) no-repeat;
+      background-size: cover;
+      background-position: center center;
+      width: 100%;
+      height: auto; }
+      .header-main .hidden-sm .image-container img {
+        width: 60%;
+        margin: 70px 20px; }
+    .header-main .hidden-sm .small-text p {
+      font-size: 18px;
+      line-height: 1.2em;
+      letter-spacing: 1px;
+      padding: 18px 18px;
+      color: black;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-weight: 600; }
+    .header-main .hidden-sm .small-text .button {
+      display: block;
+      margin: 0 20px;
+      text-align: center;
+      padding: 15px 0px;
+      background-color: #973894;
+      color: white;
+      text-transform: uppercase;
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-weight: 600; }
