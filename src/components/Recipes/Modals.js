@@ -62,8 +62,10 @@ class Modals extends Component {
                     <Modal.Header closeButton>
                         <Modal.Title id="contained-modal-title-lg">{ meal.name }</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>
-                        <img src={ meal.imagefull } alt=""/>
+                    <Modal.Body className='image-full'>
+                        {/* <div className='image-full'> */}
+                            <img src={ meal.imagefull } alt=""/>
+                        {/* </div> */}
                         <p>{ meal.description }</p>
                     </Modal.Body>
                     <Modal.Footer>

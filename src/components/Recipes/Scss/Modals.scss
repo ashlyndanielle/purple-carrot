@@ -27,4 +27,13 @@
     .overlay:hover {
         background-color: rgba(0,0,0,0.5);
     }
+
+    .image-full {
+        width: 400px;
+        height: 400px;
+
+        img {
+            width: 100%;
+        }
+    }
 }

@@ -18,3 +18,8 @@
     color: black; }
   .modal-main .overlay:hover {
     background-color: rgba(0, 0, 0, 0.5); }
+  .modal-main .image-full {
+    width: 400px;
+    height: 400px; }
+    .modal-main .image-full img {
+      width: 100%; }
