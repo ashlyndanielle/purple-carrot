@@ -1,0 +1,7 @@
+.cart-header-main {
+  background: url("../../../Images/cart/cart-cover.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 400px;
+  width: 100vw;
+  font-family: "Poppins", sans-serif; }

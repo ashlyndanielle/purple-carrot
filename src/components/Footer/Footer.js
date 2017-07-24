@@ -36,8 +36,8 @@ const Footer = () => {
             <div className='links'>
                 <Link className='page-links' to='/why-plants'>Why Plants</Link>
                 <Link className='page-links' to='/how-it-works'>How it Works</Link>
-                <Link className='page-links' to='/menu'>Menu</Link>
-                <Link className='page-links' to='/plans'>Plans</Link>
+                <Link className='page-links' to='/cart'>Cart</Link>
+                <Link className='page-links' to='/recipes'>Recipes</Link>
             </div>
             <div className='links'>
                 <div className='page-links non-links'>plant-based recipes</div>

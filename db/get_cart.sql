@@ -1,2 +1,1 @@
-SELECT * FROM cart
-WHERE userid = $1;
+SELECT * FROM cart;

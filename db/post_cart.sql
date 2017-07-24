@@ -1,2 +1,3 @@
 INSERT INTO cart (recipesid, userid, quantity)
-VALUES ($1, $2, $3);
+VALUES ($1, $2, $3)
+RETURNING *;

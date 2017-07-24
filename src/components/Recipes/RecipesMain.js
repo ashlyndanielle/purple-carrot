@@ -13,7 +13,12 @@ class RecipesMain extends Component {
         this.state = {
             mealPlans: [],
             loggedIn: {},
+            quantity: 1
         }
+
+        this.addToCart = this.addToCart.bind(this);
+        this.handleQuantity = this.handleQuantity.bind(this);
+
     }
 
     componentDidMount () {
@@ -31,7 +36,25 @@ class RecipesMain extends Component {
                     mealPlans: response.data
                 })
             })
-        // I think this is where I'll do my put request?
+    }
+
+    addToCart() {
+        let config = {
+            // quantity: this.state.quanity 
+            recipeid: 1,
+            userid: 1,
+            quantity: this.state.quantity
+        }
+        axios.post('http://localhost:3001/addtocart', config)
+            .then(response => {
+                console.log('added stuff to cart');
+            })
+    }
+
+    handleQuantity(e) {
+        this.setState({
+            quantity: e.target.value
+        })
     }
 
     render() {
@@ -55,12 +78,13 @@ class RecipesMain extends Component {
         //     )
         // })
 
-        let recipeModal = this.state.mealPlans.map((meal, i) => {
+        let recipeModal = this.state.mealPlans.map( meal => {
             return(
                 <Modals
-                    key={i}
+                    key={meal.id}
                     meal={meal}
-                    className='thumbnails'
+                    addToCart={this.addToCart}
+                    handleQuantity={this.handleQuantity}
                 />
             )
         })

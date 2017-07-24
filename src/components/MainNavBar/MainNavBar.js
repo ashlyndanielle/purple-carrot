@@ -85,9 +85,9 @@ class MainNavBar extends Component {
                             <NavItem eventKey={2}>
                                 <Link to='/how-it-works' className='nav-links'>How it works</Link>
                             </NavItem>
-                            {/* <NavItem eventKey={3}>
-                                <Link to='/menu' className='nav-links'>Menu</Link>
-                            </NavItem>           */}
+                             <NavItem eventKey={3}>
+                                <Link to='/cart' className='nav-links'>Cart</Link>
+                            </NavItem>           
                             <NavItem eventKey={4}>
                                 <Link to='/recipes' className='nav-links'>Recipes</Link>
                             </NavItem>

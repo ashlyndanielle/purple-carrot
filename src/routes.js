@@ -6,9 +6,8 @@ import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import WhyPlants from './components/WhyPlants/WhyPlants';
 import HowItWorks from './components/HowItWorks/HowItWorks';
-import Menu from './components/Menu/Menu';
+import Cart from './components/Cart/Cart';
 import RecipesMain from './components/Recipes/RecipesMain';
-import ShoppingCart from './components/ShoppingCart/ShoppingCartMain';
 // import Gifts from './components/Gifts/Gifts';
 
 
@@ -36,10 +35,10 @@ export default (
                 <Footer />
             </div>
         ) } />  
-        <Route path='/menu' render={ () => (
+        <Route path='/cart' render={ () => (
             <div>
                 <MainNavBar />
-                <Menu />
+                <Cart />
                 <Footer />
             </div>
         )} />
@@ -47,13 +46,6 @@ export default (
             <div>
                 <MainNavBar />
                 <RecipesMain />
-                <Footer />
-            </div>
-        )} />
-        <Route path='/shoppingcart' render={ () => (
-            <div>
-                <MainNavBar />
-                <ShoppingCart />
                 <Footer />
             </div>
         )} />
