@@ -13,7 +13,8 @@ class RecipesMain extends Component {
         this.state = {
             mealPlans: [],
             loggedIn: {},
-            quantity: 1
+            quantity: 1,
+            userid: null
         }
 
         this.addToCart = this.addToCart.bind(this);
@@ -23,10 +24,12 @@ class RecipesMain extends Component {
 
     componentDidMount () {
         // this sets loggedin as the user object returned from auth0
-        axios.get('http://localhost:3001/auth/me')
+        axios.get('/auth/me')
             .then( response => {
+                console.log('FIND USER ID HERE', response)
                 this.setState({
-                    loggedIn: response.data
+                    loggedIn: response.data,
+                    userid: response.data.id
                 })
             })
         // this is my database call to get my recipes
@@ -38,16 +41,17 @@ class RecipesMain extends Component {
             })
     }
 
-    addToCart() {
+    addToCart(meal) {
         let config = {
-            // quantity: this.state.quanity 
-            recipeid: 1,
-            userid: 1,
+            recipeid: meal.id,
+            recipeImage: meal,
+            userid: this.state.userid,
             quantity: this.state.quantity
         }
+
         axios.post('http://localhost:3001/addtocart', config)
             .then(response => {
-                console.log('added stuff to cart');
+                console.log(config);
             })
     }
 

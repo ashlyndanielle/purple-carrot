@@ -29,7 +29,7 @@ class MainNavBar extends Component {
         // this is sending back the user that is logged in
         axios.get('/auth/me')
             .then( response => {
-                console.log("YOU'RE A USER NOW!", response);
+                console.log("Is there a user?", response);
                 if (response.data === '') {
                     this.setState({
                         loggedInUser: null,

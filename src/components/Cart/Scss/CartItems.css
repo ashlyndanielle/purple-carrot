@@ -1,15 +1,11 @@
 .cart-items-main {
-  padding: 40px 0;
-  width: 100vw;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  border: 1px solid black; }
+  font-family: "Poppins", sans-serif; }
   .cart-items-main .items-container {
-    border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid black;
     padding: 20px 100px; }
     .cart-items-main .items-container .item {
       display: inline-grid;

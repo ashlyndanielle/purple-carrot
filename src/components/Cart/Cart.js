@@ -11,7 +11,8 @@ class Menu extends Component {
         super(props);
 
         this.state = {
-            cart: []
+            cart: [],
+            loggedIn: {},
         }
     }
 
@@ -19,24 +20,42 @@ class Menu extends Component {
     componentDidMount() {
         axios.get('http://localhost:3001/getcart')
             .then( response => {
-                console.log(response);
+                console.log("What i want",response);
                 this.setState({
                     cart: response.data
                 })
             })
 
-        axios.get('http://localhost:3001/getrecipes')
-    }
+        axios.get('http://localhost:3001/auth/me')
+            .then( response => {
+                this.setState({
+                    loggedIn: response.data
+                })
+            })
+
+        // axios.get('http://localhost:3001/getrecipes')
+        //     .then( response => {
+        //         // console.log('GIVE ME FOOD', response.data)
+        //         this.setState({
+        //             recipeDetail: response.data
+        //         })
+        //     })
+    }   
 
 
     render() {
         // need to map the cart items into the CartItems component
         let cartItems = this.state.cart.map( item => {
+            console.log("HI",item.recipethumbnail)
             return(
-                <CartItems 
+                <CartItems
+                    className='items-container'
                     recipesid={item.recipesid}
                     userid={item.userid}
                     quantity={item.quantity}
+                    thumbnail={item.recipethumbnail}
+                    name={item.name}
+                    price={item.price}
                 />
             )
         })

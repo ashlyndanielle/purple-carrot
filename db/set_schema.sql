@@ -64,10 +64,13 @@ CREATE TABLE cart (
     id SERIAL PRIMARY KEY,
     recipesid INTEGER NOT NULL REFERENCES recipes(id),
     userid INTEGER NOT NULL REFERENCES users(id),
-    quantity INTEGER
+    quantity INTEGER,
+    recipeThumbnail TEXT,
+    name TEXT,
+    price DECIMAL
 );
 
-INSERT INTO cart (recipesid, userid, quantity)
-VALUES (1, 1, 4);
+INSERT INTO cart (recipesid, userid, quantity, recipeThumbnail, name, price)
+VALUES (1, 1, 4, 'https://s3-us-west-2.amazonaws.com/purplecarrot/beet-burger-thumbnail.jpg', 'Beet Burger with Roasted Grapes & Herb Garlic Cashew Cheese', 22.26);
 
 

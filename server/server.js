@@ -81,31 +81,35 @@ massive(config.herokuConnect).then((dbInstance) => {
 
     // My endpoints
     app.get('/getUsers', (req, res, next) => {
-        dbInstance.get_users().then( response => res.status(200).send(response))
+        dbInstance.get_users()
+            .then( response => res.status(200).send(response))
     })
 
     app.get('/getRecipes', (req, res, next) => {
-        dbInstance.get_recipes().then( response => res.status(200).send(response))
+        dbInstance.get_recipes()
+            .then( response => res.status(200).send(response))
     })
 
         // this is supposed to get the specific recipe
-    app.get('/getRecipes/:id', (req, res, next) => {
-        dbInstance.get_recipe_by_id(res.data.id).then( response => res.status(200).send(response))
+    app.get('/getSpecificRecipe', (req, res, next) => {
+        dbInstance.get_recipe_by_id(res.data.id)
+            .then( response => res.status(200).send(response))
     })
 
     app.get('/getcart', (req, res, next) => {
-        dbInstance.get_cart().then( response => res.status(200).send(response));
+        dbInstance.get_cart()
+            .then( response => res.status(200).send(response));
     })
-        // this is supposed to get the user's cart
     
     
     // app.get('/getCart/:id', (req, res, next) => {
     //     dbInstance.get_cart_by_id(res.data.id).then( (response) => res.status(200).send(response))
     // })
 
-    
+    // the config variable that is passed into the post request in RecipesMain is found on 
+    // req in body (if you console.log it)...hense req.body.recipeid, etc...
     app.post('/addtocart', (req, res, next) => {
-        dbInstance.post_cart([req.body.recipeid, req.body.userid, req.body.quantity])
+        dbInstance.post_cart([req.body.recipeid, req.body.userid, req.body.quantity, req.body.recipeThumbnail])
             .then( () => res.status(200).send('added stuff'))
     })
 

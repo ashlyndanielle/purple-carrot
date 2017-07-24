@@ -5,9 +5,10 @@ import './Scss/CartItems.css';
 const CartItems = (props) => {
     return (
         <div className='cart-items-main'>
-            <div className='items-container'>
+             <div className='items-container'> 
                 <div className='item'>
-                    <img src="" alt="recipe item"/>
+                    <img src={props.thumbnail} alt="recipe item"/>
+                    <div className='name'>{props.name}</div>
                     <select className='delivery'>
                         <option>Delivery Date</option>
                     </select>
@@ -21,10 +22,10 @@ const CartItems = (props) => {
                             <option>5</option>
                             <option>6</option>
                         </select>
-                        <p>Price:</p>
+                        <p>Price: {props.price}</p>
                     </div>
                 </div>
-            </div>
+             </div> 
         </div>
     );
 };

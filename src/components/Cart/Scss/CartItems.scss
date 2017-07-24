@@ -2,18 +2,18 @@
 
 .cart-items-main {
 
-    padding: 40px 0;
-    width: 100vw;
-    text-transform: uppercase;
+    // padding: 40px 0;
+    // width: 100vw;
+    // text-transform: uppercase;
     font-family: $font;
-    border: 1px solid black;
+    // border: 1px solid black;
 
     .items-container {
-        border: 1px solid black;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        border: 1px solid black;
         padding:20px 100px;
 
         .item {

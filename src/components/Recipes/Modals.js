@@ -36,8 +36,8 @@ class Modals extends Component {
 
     // Function to fire the addToCart function in the parent, as well as fire the hdieModal function
     // Both occur when you click on the button "Add to cart"
-    handleAddToCart() {
-        this.props.addToCart();
+    handleAddToCart(meal) {
+        this.props.addToCart(meal);
         this.hideModal();
     }
 
@@ -88,7 +88,7 @@ class Modals extends Component {
                         <p>{ meal.description }</p>
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button onClick={this.handleAddToCart}>Add to Cart</Button>
+                        <Button onClick={() => this.handleAddToCart(meal)}>Add to Cart</Button>
                        
                         <select onChange={ e => this.props.handleQuantity(e)}>
                             <option>1</option>
