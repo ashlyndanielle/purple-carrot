@@ -44,14 +44,17 @@ class RecipesMain extends Component {
     addToCart(meal) {
         let config = {
             recipeid: meal.id,
-            recipeImage: meal,
             userid: this.state.userid,
-            quantity: this.state.quantity
+            quantity: this.state.quantity,
+            recipeThumbnail: meal.thumbnail,
+            name: meal.name,
+            price: meal.price
         }
 
         axios.post('http://localhost:3001/addtocart', config)
             .then(response => {
-                console.log(config);
+                console.log('CONFIG NAME', config.name);
+                // console.log('CONFIG', config)
             })
     }
 

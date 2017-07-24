@@ -109,7 +109,7 @@ massive(config.herokuConnect).then((dbInstance) => {
     // the config variable that is passed into the post request in RecipesMain is found on 
     // req in body (if you console.log it)...hense req.body.recipeid, etc...
     app.post('/addtocart', (req, res, next) => {
-        dbInstance.post_cart([req.body.recipeid, req.body.userid, req.body.quantity, req.body.recipeThumbnail])
+        dbInstance.post_cart([req.body.recipeid, req.body.userid, req.body.quantity, req.body.recipeThumbnail, req.body.name, req.body.price])
             .then( () => res.status(200).send('added stuff'))
     })
 

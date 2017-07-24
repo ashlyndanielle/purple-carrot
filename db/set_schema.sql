@@ -72,5 +72,13 @@ CREATE TABLE cart (
 
 INSERT INTO cart (recipesid, userid, quantity, recipeThumbnail, name, price)
 VALUES (1, 1, 4, 'https://s3-us-west-2.amazonaws.com/purplecarrot/beet-burger-thumbnail.jpg', 'Beet Burger with Roasted Grapes & Herb Garlic Cashew Cheese', 22.26);
+INSERT INTO cart (recipesid, userid, quantity, recipeThumbnail, name, price)
+VALUES (1, 1, 4, 'https://s3-us-west-2.amazonaws.com/purplecarrot/beet-burger-thumbnail.jpg', 'Beet Burger with Roasted Grapes & Herb Garlic Cashew Cheese', 22.26);
+INSERT INTO cart (recipesid, userid, quantity, recipeThumbnail, name, price)
+VALUES (1, 1, 4, 'https://s3-us-west-2.amazonaws.com/purplecarrot/beet-burger-thumbnail.jpg', 'Beet Burger with Roasted Grapes & Herb Garlic Cashew Cheese', 22.26);
+INSERT INTO cart (recipesid, userid, quantity, recipeThumbnail, name, price)
+VALUES (1, 1, 4, 'https://s3-us-west-2.amazonaws.com/purplecarrot/beet-burger-thumbnail.jpg', 'Beet Burger with Roasted Grapes & Herb Garlic Cashew Cheese', 22.26);
+INSERT INTO cart (recipesid, userid, quantity, recipeThumbnail, name, price)
+VALUES (1, 1, 4, 'https://s3-us-west-2.amazonaws.com/purplecarrot/beet-burger-thumbnail.jpg', 'Beet Burger with Roasted Grapes & Herb Garlic Cashew Cheese', 22.26);
 
 
