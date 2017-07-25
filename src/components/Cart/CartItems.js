@@ -5,7 +5,7 @@ import './Scss/CartItems.css';
 const CartItems = (props) => {
     return (
         <div className='cart-items-main'>
-             <div className='items-container'> 
+
                 <div className='item'>
                     <img src={props.thumbnail} alt="recipe item"/>
                     <div className='name'>{props.name}</div>
@@ -25,7 +25,7 @@ const CartItems = (props) => {
                         <p>Price: {props.price}</p>
                     </div>
                 </div>
-             </div> 
+
         </div>
     );
 };

@@ -26,6 +26,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
+
 // Massive Setup
 massive(config.herokuConnect).then((dbInstance) => {
     app.set('db', dbInstance);
@@ -65,6 +66,8 @@ massive(config.herokuConnect).then((dbInstance) => {
             })
     }
     ));
+
+    
 
 
     // Passport setup part 2
@@ -134,6 +137,7 @@ massive(config.herokuConnect).then((dbInstance) => {
         res.redirect('http://localhost:3000/');
     })
 });
+
 
 
 app.listen(port, () => {

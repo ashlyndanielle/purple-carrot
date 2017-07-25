@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 
-import './Scss/WhyPlants.css';
+import './Scss/WholeFoods.css';
 
-class WhyPlants extends Component {
+class WholeFoods extends Component {
     render() {
         return (
             <div className='why-plants-main'>
-                Why Plants Component
+                Whole Foods Plant-Based Diet Component
             </div>
         );
     }
 }
 
-export default WhyPlants;
+export default WholeFoods;

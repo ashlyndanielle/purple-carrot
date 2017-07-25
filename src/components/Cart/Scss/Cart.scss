@@ -1,7 +1,14 @@
 @import '../../globalVariables.scss';
 
-.menu-main {
+.cart-main {
     margin-top: 90px;
+    width: 100%;
 
-    .items-container
+    .cart-items-container {
+        display: flex;
+        // flex-wrap: wrap;
+        // flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

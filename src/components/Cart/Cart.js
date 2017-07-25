@@ -49,7 +49,6 @@ class Menu extends Component {
             console.log("HI",item)
             return(
                 <CartItems
-                    className='cart-items-container'
                     recipesid={item.recipesid}
                     userid={item.userid}
                     quantity={item.quantity}
@@ -65,7 +64,9 @@ class Menu extends Component {
         return (
             <div className='cart-main'>
                 <Header />
-                { cartItems }
+                <div className='cart-items-container'>
+                    { cartItems }
+                </div>
             </div>
         );
     }

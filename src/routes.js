@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import MainNavBar from './components/MainNavBar/MainNavBar';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
-import WhyPlants from './components/WhyPlants/WhyPlants';
+import WholeFoods from './components/WholeFoods/WholeFoods';
 import HowItWorks from './components/HowItWorks/HowItWorks';
 import Cart from './components/Cart/Cart';
 import RecipesMain from './components/Recipes/RecipesMain';
@@ -21,10 +21,10 @@ export default (
                 <Footer />
             </div>
             ) } />
-        <Route path='/why-plants' render={ () => (
+        <Route path='/wfpb' render={ () => (
             <div>
                 <MainNavBar />
-                <WhyPlants />
+                <WholeFoods />
                 <Footer />
             </div>
         )} />
