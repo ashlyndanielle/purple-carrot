@@ -8,6 +8,9 @@ const CartItems = (props) => {
             backgroundImage: `url(${props.thumbnail})`,
         }
 
+        
+       
+
     return (
 
 
@@ -16,9 +19,9 @@ const CartItems = (props) => {
                     <div className='thumbnail-container' style={buttonBackground}></div>
                     <div className='name'>{props.name}</div>
                     <div className='button-box'>
-                        <button className='delete'>
+                        <button className='delete' onClick={ () => props.deleteItem(props.recipesid) }>
                             Remove Item
-                        </button>
+                        </button>  
                         <div className='item-price'>
                             <select id="soflow">
                                 <option>{props.quantity}</option>

@@ -103,11 +103,13 @@ massive(config.herokuConnect).then((dbInstance) => {
         dbInstance.get_cart()
             .then( response => res.status(200).send(response));
     })
-    
-    
-    // app.get('/getCart/:id', (req, res, next) => {
-    //     dbInstance.get_cart_by_id(res.data.id).then( (response) => res.status(200).send(response))
-    // })
+
+
+    app.delete('/deleteitem', (req, res, next) => {
+        // console.log("SERVER",req.query)
+        dbInstance.delete_cart_item(req.query.recipesid)
+            .then( res.status(200).send('REMOVED CART ITEM'))
+    })
 
     // the config variable that is passed into the post request in RecipesMain is found on 
     // req in body (if you console.log it)...hense req.body.recipeid, etc...

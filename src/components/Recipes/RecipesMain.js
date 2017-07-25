@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import RecipesDetails from './RecipesDetails';
 import Modals from './Modals';
 
 import './Scss/RecipesMain.css';
@@ -42,6 +41,7 @@ class RecipesMain extends Component {
     }
 
     addToCart(meal) {
+        // config is going to pass in the parameters I need for my post request
         let config = {
             recipeid: meal.id,
             userid: this.state.userid,

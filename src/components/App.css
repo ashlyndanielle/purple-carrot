@@ -43,11 +43,13 @@ table {
 
 .main-nav-container {
   font-family: "Poppins", sans-serif; }
+  .main-nav-container .navbar-brand {
+    margin-top: -10px; }
   .main-nav-container .navbar-styles {
     background-color: white;
     border: none;
     padding-top: 10px;
-    padding-bottom: 30px; }
+    padding-bottom: 15px; }
     .main-nav-container .navbar-styles .vertical-align {
       height: 100%; }
       .main-nav-container .navbar-styles .vertical-align img {

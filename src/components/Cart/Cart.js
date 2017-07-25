@@ -15,17 +15,14 @@ class Menu extends Component {
             cart: [],
             loggedIn: {},
         }
+
+        this.deleteItem = this.deleteItem.bind(this);
+        this.getCart = this.getCart.bind(this);
     }
 
         // need a get request for the user cart and recipe table
     componentDidMount() {
-        axios.get('http://localhost:3001/getcart')
-            .then( response => {
-                console.log("What i want",response.data);
-                this.setState({
-                    cart: response.data
-                })
-            })
+        this.getCart()
 
         axios.get('http://localhost:3001/auth/me')
             .then( response => {
@@ -34,14 +31,37 @@ class Menu extends Component {
                 })
             })
     }   
+    
+    getCart() {
+        console.log("FIRED")
+        axios.get('http://localhost:3001/getcart')
+            .then( response => {
+                this.setState({
+                    cart: response.data
+                })
+            })
+    }
+
+    deleteItem(id) {
+
+        axios.delete('http://localhost:3001/deleteitem', {params: {recipesid: id}})
+            .then( () => {
+                console.log("HEYYYYYY");
+                setTimeout(() => {
+                    this.getCart();
+                },1)
+            })
+    }
 
 
     render() {
+        
+        console.log('MY CART', this.state.cart)
         // need to map the cart items into the CartItems component
         let cartItems = this.state.cart.map( item => {
-            console.log("HI",item)
             return(
                 <CartItems
+                    deleteItem={this.deleteItem}
                     recipesid={item.recipesid}
                     userid={item.userid}
                     quantity={item.quantity}
@@ -51,8 +71,6 @@ class Menu extends Component {
                 />
             )
         })
-
-
 
         return (
             <div className='cart-main'>
