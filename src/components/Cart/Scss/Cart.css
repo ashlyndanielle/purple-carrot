@@ -2,6 +2,6 @@
   margin-top: 90px;
   width: 100%; }
   .cart-main .cart-items-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    display: inline-block;
+    text-align: center;
+    width: 100%; }

@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import Header from './Header';
 import CartItems from './CartItems';
+import CartButtons from './CartButtons';
 
 import './Scss/Cart.css';
 
@@ -32,14 +33,6 @@ class Menu extends Component {
                     loggedIn: response.data
                 })
             })
-
-        // axios.get('http://localhost:3001/getrecipes')
-        //     .then( response => {
-        //         // console.log('GIVE ME FOOD', response.data)
-        //         this.setState({
-        //             recipeDetail: response.data
-        //         })
-        //     })
     }   
 
 
@@ -67,6 +60,7 @@ class Menu extends Component {
                 <div className='cart-items-container'>
                     { cartItems }
                 </div>
+                <CartButtons />
             </div>
         );
     }

@@ -1,42 +1,50 @@
-.cart-items-main {
-  padding: 40px 0;
-  width: 100vw;
+.recipe-item {
+  margin: 20px 10px;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.2em;
+  letter-spacing: 1px;
+  color: black;
+  font-weight: 600;
   border: 1px solid black;
-  border: 1px solid black;
-  padding: 20px 100px; }
-  .cart-items-main .item {
-    display: inline-grid;
-    margin-left: auto;
-    margin-right: auto;
+  height: 475px;
+  width: 250px;
+  position: relative; }
+  .recipe-item .name {
+    margin-left: 10px;
+    margin-right: 10px; }
+  .recipe-item .thumbnail-container {
+    height: 225px;
+    width: 225px;
+    background-size: cover;
+    margin: 10px auto 30px auto; }
+  .recipe-item .delete {
+    margin: 0 auto 16px auto;
+    width: 90%;
+    padding-top: 5px;
     text-align: center;
-    font-size: 20px;
-    line-height: 1.2em;
-    letter-spacing: 1px;
-    color: black;
-    font-weight: 600;
-    padding: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    border: 1px solid black;
-    height: 100%;
-    width: 250px; }
-    .cart-items-main .item img {
-      height: 225px;
-      width: 100%;
-      margin-bottom: 20px;
-      background-color: white;
-      object-fit: contain; }
-    .cart-items-main .item .delivery {
-      margin-bottom: 16px;
+    background-color: #99CA3C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase; }
+  .recipe-item .item-price {
+    font-size: 12px;
+    display: flex;
+    justify-content: center; }
+    .recipe-item .item-price select {
       background-color: #99CA3C;
-      color: white; }
-    .cart-items-main .item .item-price {
-      font-size: 12px;
-      display: flex;
-      justify-content: space-between; }
-      .cart-items-main .item .item-price select {
-        background-color: #99CA3C;
-        color: white;
-        border-style: none; }
+      color: white;
+      border-style: none;
+      font-size: 14px;
+      margin-right: 91px; }
+    .recipe-item .item-price p {
+      margin-left: 10px; }
+  .recipe-item .button-box {
+    position: absolute;
+    width: 100%;
+    bottom: 10px; }

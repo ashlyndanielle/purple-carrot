@@ -5,10 +5,12 @@
     width: 100%;
 
     .cart-items-container {
-        display: flex;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
         // flex-wrap: wrap;
         // flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        // justify-content: space-between;
+        // align-items: center;
     }
 }
