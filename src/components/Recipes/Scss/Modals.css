@@ -22,5 +22,17 @@
   line-height: 1.2em; }
   .image-full .the-image {
     width: 100%; }
-  .image-full .meal-description {
-    margin-top: 20px; }
+
+.meal-info .meal-description {
+  display: inline-block;
+  width: 80%;
+  padding-right: 20px; }
+
+.meal-info .nutrition {
+  text-align: center;
+  display: inline-block;
+  width: 20%; }
+  .meal-info .nutrition h1 {
+    font-weight: 600; }
+  .meal-info .nutrition p {
+    font-size: 12px; }
