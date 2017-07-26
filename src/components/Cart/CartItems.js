@@ -1,30 +1,34 @@
-import React from 'react';
+import React, { Component}  from 'react';
 
 import './Scss/CartItems.css';
 
-const CartItems = (props) => {
+class CartItems extends Component {
 
-    const buttonBackground = {
-            backgroundImage: `url(${props.thumbnail})`,
+    handleChange(e) {
+        this.props.changeQuantity(e);
+        setTimeout( () => {
+            this.props.updateQuantity(this.props.recipesid)
+        },1)
+    }
+
+    render() {
+         const buttonBackground = {
+            backgroundImage: `url(${this.props.thumbnail})`,
         }
 
-        
-       
-
-    return (
-
-
-                <div className='recipe-item'>
+        return (
+            
+            <div className='recipe-item'>
                     {/* <img src={props.thumbnail} alt="recipe item"/> */}
                     <div className='thumbnail-container' style={buttonBackground}></div>
-                    <div className='name'>{props.name}</div>
+                    <div className='name'>{this.props.name}</div>
                     <div className='button-box'>
-                        <button className='delete' onClick={ () => props.deleteItem(props.recipesid) }>
+                        <button className='delete' onClick={ () => this.props.deleteItem(this.props.recipesid) }>
                             Remove Item
                         </button>  
                         <div className='item-price'>
-                            <select id="soflow">
-                                <option>{props.quantity}</option>
+                            <select id="soflow" onChange={ e => this.handleChange(e)}>
+                                 <option>{this.props.quantity}</option> 
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -32,12 +36,12 @@ const CartItems = (props) => {
                                 <option>5</option>
                                 <option>6</option>
                             </select>
-                            <p>Price: {props.price}</p>
+                            <p>Price: {this.props.price * this.props.quantity}</p>
                         </div>
                     </div>
                 </div>
-
-    );
-};
+        );
+    }
+}
 
 export default CartItems;

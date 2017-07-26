@@ -107,7 +107,7 @@ massive(config.herokuConnect).then((dbInstance) => {
 
     app.delete('/deleteitem', (req, res, next) => {
         console.log("SERVER",req.query)
-        dbInstance.delete_cart_item(req.query)
+        dbInstance.delete_cart_item(req.query.recipesid)
             .then( res.status(200).send('REMOVED CART ITEM'))
     })
 
@@ -116,6 +116,13 @@ massive(config.herokuConnect).then((dbInstance) => {
     app.post('/addtocart', (req, res, next) => {
         dbInstance.post_cart([req.body.recipeid, req.body.userid, req.body.quantity, req.body.recipeThumbnail, req.body.name, req.body.price])
             .then( () => res.status(200).send('added stuff'))
+    })
+
+    app.put('/updatequantity', (req, res, next) => {
+        console.log("server id",req.body.recipeid)
+        console.log("server quantity",req.body.quantity)
+        dbInstance.update_quantity([req.body.quantity, req.body.recipeid])
+            .then( () => res.status(200).send('Changed Quantity'))
     })
 
 

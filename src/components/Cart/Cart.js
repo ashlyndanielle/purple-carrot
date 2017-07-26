@@ -14,10 +14,13 @@ class Menu extends Component {
         this.state = {
             cart: [],
             loggedIn: {},
+            quantity: 0
         }
 
         this.deleteItem = this.deleteItem.bind(this);
         this.getCart = this.getCart.bind(this);
+        this.changeQuantity = this.changeQuantity.bind(this);
+        this.updateQuantity = this.updateQuantity.bind(this);
     }
 
         // need a get request for the user cart and recipe table
@@ -52,6 +55,28 @@ class Menu extends Component {
             })
     }
 
+    changeQuantity(e) {
+        this.setState({
+            quantity: e.target.value
+        })
+        // setTimeout( () => {
+        //     console.log('CHANGED QUANTITY', this.state.quantity);
+        //     this.updateQuantity()
+        // }, 1);
+    }
+
+    updateQuantity(id) {
+        let config = {
+            quantity: this.state.quantity,
+            recipeid: id
+        }
+
+        axios.put('http://localhost:3001/updatequantity', config)
+            .then(response => {
+                this.getCart()            
+            })
+    }
+
 
     render() {
         // need to map the cart items into the CartItems component
@@ -65,9 +90,13 @@ class Menu extends Component {
                     thumbnail={item.recipethumbnail}
                     name={item.name}
                     price={item.price}
+                    changeQuantity={this.changeQuantity}
+                    updateQuantity={this.updateQuantity}
                 />
             )
         })
+
+        console.log('Updated', this.state.cart)
 
         return (
             <div className='cart-main'>

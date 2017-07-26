@@ -1,1 +1,2 @@
-SELECT * FROM cart;
+SELECT * FROM cart
+order by id;
