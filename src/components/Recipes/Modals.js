@@ -83,9 +83,18 @@ class Modals extends Component {
                     </Modal.Header>
                     <Modal.Body className='image-full'>
                         {/* <div className='image-full'> */}
-                            <img className="the-image"src={ meal.imagefull } alt=""/>
+                            <img className="the-image" src={ meal.imagefull } alt=""/>
                         {/* </div> */}
-                        <p>{ meal.description }</p>
+                        <div>
+                            <p className='meal-description'>{ meal.description }</p>
+                            <div className='nutrition'>
+                                <h1>NUTRITION INFORMATION</h1>
+                                <p>CALORIES: {meal.calories}</p>
+                                <p>PROTEIN: {meal.protein}</p>
+                                <p>CARBS: {meal.carbs}</p>
+                                <p>FAT: {meal.fat}</p>
+                            </div>
+                        </div>
                     </Modal.Body>
                     <Modal.Footer>
                         <Button onClick={() => this.handleAddToCart(meal)}>Add to Cart</Button>

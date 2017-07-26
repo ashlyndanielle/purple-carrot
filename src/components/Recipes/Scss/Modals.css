@@ -1,10 +1,5 @@
 .modal-main {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: baseline;
-  align-content: space-around; }
+  padding: 10px; }
   .modal-main .button-styles {
     height: 200px;
     width: 200px;
@@ -18,15 +13,14 @@
     color: black; }
   .modal-main .overlay:hover {
     background-color: rgba(0, 0, 0, 0.5); }
-  .modal-main .image-full {
-    width: 400px;
-    height: 400px; }
-    .modal-main .image-full img {
-      width: 100%; }
 
-.the-image {
-  width: 500px;
-  height: 500px; }
+#contained-modal-title-lg {
+  font-family: "Poppins", sans-serif; }
 
-.modal-main {
-  padding: 10px; }
+.image-full {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2em; }
+  .image-full .the-image {
+    width: 100%; }
+  .image-full .meal-description {
+    margin-top: 20px; }

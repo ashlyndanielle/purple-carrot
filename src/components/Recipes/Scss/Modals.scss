@@ -1,19 +1,19 @@
 @import '../../globalVariables.scss';
 
 .modal-main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: baseline;
-    align-content: space-around;
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // align-items: baseline;
+    // align-content: space-around;
+    padding: 10px;
 
     .button-styles {
         height: 200px;
         width: 200px;
         background-size: cover;
         padding: 0;
-        // display: inline-flex;
     }
 
     .overlay {
@@ -27,22 +27,22 @@
     .overlay:hover {
         background-color: rgba(0,0,0,0.5);
     }
+}
 
-    .image-full {
-        width: 400px;
-        height: 400px;
+#contained-modal-title-lg {
+    font-family: $font;
+}
 
-        img {
-            width: 100%;
-        }
+.image-full {
+    font-family: $font;
+    line-height: 1.2em;
+
+    .the-image {
+        width: 100%;
+    }
+    .meal-description {
+        margin-top: 20px;
     }
 }
 
-.the-image {
-    width: 500px;
-    height: 500px;
-}
 
-.modal-main {
-    padding: 10px;
-}

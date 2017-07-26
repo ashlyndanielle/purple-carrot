@@ -16,7 +16,8 @@
   position: relative; }
   .recipe-item .name {
     margin-left: 10px;
-    margin-right: 10px; }
+    margin-right: 10px;
+    font-size: 18px; }
   .recipe-item .thumbnail-container {
     height: 225px;
     width: 225px;

@@ -106,8 +106,8 @@ massive(config.herokuConnect).then((dbInstance) => {
 
 
     app.delete('/deleteitem', (req, res, next) => {
-        // console.log("SERVER",req.query)
-        dbInstance.delete_cart_item(req.query.recipesid)
+        console.log("SERVER",req.query)
+        dbInstance.delete_cart_item(req.query)
             .then( res.status(200).send('REMOVED CART ITEM'))
     })
 
