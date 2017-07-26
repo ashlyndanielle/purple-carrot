@@ -3,7 +3,6 @@ import axios from 'axios';
 
 import Header from './Header';
 import CartItems from './CartItems';
-import Delivery from './Delivery';
 import CartButtons from './CartButtons';
 
 import './Scss/Cart.css';
@@ -15,7 +14,8 @@ class Menu extends Component {
         this.state = {
             cart: [],
             loggedIn: {},
-            quantity: 0
+            quantity: 0,
+            cartTotal: 0
         }
 
         this.deleteItem = this.deleteItem.bind(this);
@@ -34,6 +34,7 @@ class Menu extends Component {
                     loggedIn: response.data
                 })
             })
+
     }   
     
     getCart() {
@@ -41,6 +42,14 @@ class Menu extends Component {
             .then( response => {
                 this.setState({
                     cart: response.data
+                })
+            })
+
+        axios.get('http://localhost:3001/gettotal')
+            .then( response => {
+                console.log('CART TOTAL', response.data[0].sum)
+                this.setState({
+                    cartTotal: response.data[0].sum
                 })
             })
     }
@@ -105,7 +114,9 @@ class Menu extends Component {
                 <div className='cart-items-container'>
                     { cartItems }
                 </div>
-                <CartButtons />
+                <CartButtons 
+                    cartTotal={this.state.cartTotal}
+                />
             </div>
         );
     }

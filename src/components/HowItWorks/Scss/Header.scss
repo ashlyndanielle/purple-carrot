@@ -1,12 +1,11 @@
 @import '../../globalVariables.scss';
-@import url('https://fonts.googleapis.com/css?family=Sarina');
 
 .works-header-main {
     color: white;
 
 
     .mobile {
-        font-family: 'Sarina';
+        font-family: $font-secondary;
         font-size: 36px;
         // letter-spacing: 2px;
         line-height: 1.3em;
@@ -58,7 +57,7 @@
         background-size: cover;
 
         .title {
-            font-family: 'Sarina';
+            font-family: $font-secondary;
             font-size: 66px;
             // letter-spacing: 2px;
             line-height: 1.3em;

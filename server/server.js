@@ -104,6 +104,11 @@ massive(config.herokuConnect).then((dbInstance) => {
             .then( response => res.status(200).send(response));
     })
 
+    app.get('/gettotal', (req, res, next) => {
+        dbInstance.get_total()
+            .then( response => res.status(200).send(response))
+    })
+
 
     app.delete('/deleteitem', (req, res, next) => {
         console.log("SERVER",req.query)
@@ -119,8 +124,6 @@ massive(config.herokuConnect).then((dbInstance) => {
     })
 
     app.put('/updatequantity', (req, res, next) => {
-        console.log("server id",req.body.recipeid)
-        console.log("server quantity",req.body.quantity)
         dbInstance.update_quantity([req.body.quantity, req.body.recipeid])
             .then( () => res.status(200).send('Changed Quantity'))
     })
@@ -136,7 +139,6 @@ massive(config.herokuConnect).then((dbInstance) => {
     { successRedirect: 'http://localhost:3000/recipes'}));
     // #3: this gives me the user that is logged in
     app.get('/auth/me', function(req, res) {
-        console.log('am i working ', req.user)
         if (!req.user) return res.status(200).send('');
         res.status(200).send(req.user);
     })

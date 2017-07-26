@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Sarina");
 .works-header-main {
   color: white; }
   .works-header-main .mobile {
-    font-family: 'Sarina';
+    font-family: "Indie Flower", cursive;
     font-size: 36px;
     line-height: 1.3em;
     padding-left: 30px;
@@ -35,7 +34,7 @@
     background-position: center;
     background-size: cover; }
     .works-header-main .desktop .title {
-      font-family: 'Sarina';
+      font-family: "Indie Flower", cursive;
       font-size: 66px;
       line-height: 1.3em; }
     .works-header-main .desktop .sub-title {

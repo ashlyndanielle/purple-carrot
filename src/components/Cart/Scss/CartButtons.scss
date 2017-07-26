@@ -1,5 +1,19 @@
 @import '../../globalVariables.scss';
 
+
+
+.buttons-main-container {
+    text-align: center;
+
+    .total-price {
+        font-family: $font-secondary;
+        font-size: 70px;
+        padding: 30px 0 40px 0;
+        letter-spacing: 3px;
+        white-space: pre-wrap;
+    }
+}
+
 .buttons-main {
     background-image: url('../../../Images/cart/cart-image-2.jpg');
     background-size: cover;
