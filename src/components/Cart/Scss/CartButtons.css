@@ -1,0 +1,26 @@
+.buttons-main {
+  background-image: url("../../../Images/cart/cart-image-2.jpg");
+  background-size: cover;
+  background-position: bottom;
+  box-shadow: -3px -4px 16px 1px black;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0; }
+  .buttons-main .button-checkout {
+    text-align: left; }
+  .buttons-main .button-shop {
+    text-align: right; }
+  .buttons-main button {
+    height: 80px;
+    font-size: 22px;
+    background-color: #973894;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    margin-top: 200px;
+    margin-bottom: 200px; }
+    .buttons-main button .link {
+      color: white; }
+    .buttons-main button .link:hover {
+      text-decoration: none; }

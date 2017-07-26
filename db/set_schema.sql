@@ -75,14 +75,14 @@ CREATE TABLE cart (
 );
 
 INSERT INTO cart (recipesid, userid, quantity, recipeThumbnail, name, price)
-VALUES (1, 1, 4, 'https://s3-us-west-2.amazonaws.com/purplecarrot/beet-burger-thumbnail.jpg', 'Beet Burger with Roasted Grapes & Herb Garlic Cashew Cheese', 22.26);
+VALUES (1, 1, 4, 'https://s3-us-west-2.amazonaws.com/purplecarrot/beet-burger-thumbnail.jpg', 'Beet Burger with Roasted Grapes & Herb Garlic Cashew Cheese', 13.27);
 INSERT INTO cart (recipesid, userid, quantity, recipeThumbnail, name, price)
-VALUES (2, 1, 2, 'https://s3-us-west-2.amazonaws.com/purplecarrot/maple-tempeh-thumbnail.jpg', 'Maple Tempeh with Lime Couscous Salad and Minty Plums', 22.26);
+VALUES (2, 1, 2, 'https://s3-us-west-2.amazonaws.com/purplecarrot/maple-tempeh-thumbnail.jpg', 'Maple Tempeh with Lime Couscous Salad and Minty Plums', 13.27);
 INSERT INTO cart (recipesid, userid, quantity, recipeThumbnail, name, price)
-VALUES (3, 1, 3, 'https://s3-us-west-2.amazonaws.com/purplecarrot/tempeh-tacos-thumbnail.jpg', 'Tempeh Tacos Al Pastor with Pineapple Salsa', 22.26);
+VALUES (3, 1, 3, 'https://s3-us-west-2.amazonaws.com/purplecarrot/tempeh-tacos-thumbnail.jpg', 'Tempeh Tacos Al Pastor with Pineapple Salsa', 13.27);
 INSERT INTO cart (recipesid, userid, quantity, recipeThumbnail, name, price)
-VALUES (4, 1, 4, 'https://s3-us-west-2.amazonaws.com/purplecarrot/kitchari-thumbnail.jpg', 'Wicked Healthy Kitchari with Minted Cucumber Avocado Salad & Toasted Naan', 22.26);
+VALUES (4, 1, 4, 'https://s3-us-west-2.amazonaws.com/purplecarrot/kitchari-thumbnail.jpg', 'Wicked Healthy Kitchari with Minted Cucumber Avocado Salad & Toasted Naan', 13.27);
 INSERT INTO cart (recipesid, userid, quantity, recipeThumbnail, name, price)
-VALUES (5, 1, 4, 'https://s3-us-west-2.amazonaws.com/purplecarrot/beet-burger-thumbnail.jpg', 'Beet Burger with Roasted Grapes & Herb Garlic Cashew Cheese', 22.26);
+VALUES (5, 1, 4, 'https://s3-us-west-2.amazonaws.com/purplecarrot/beet-burger-thumbnail.jpg', 'Beet Burger with Roasted Grapes & Herb Garlic Cashew Cheese', 13.27);
 
 

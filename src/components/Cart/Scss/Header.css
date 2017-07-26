@@ -4,4 +4,5 @@
   background-position: bottom;
   height: 400px;
   width: 100vw;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  box-shadow: 3px 4px 16px 1px black; }
