@@ -1,0 +1,26 @@
+@import '../../globalVariables.scss';
+
+.cart-delivery-main {
+    width: 100%;
+    font-family: $font;
+    text-align: center;
+    margin: 40px 0;
+
+    p {
+        font-family: $font-secondary;
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+
+    select {
+        width: 20%;
+        border-color: $purple;
+        color: $purple;
+        margin-top: 10px;
+        text-transform: lowercase;
+    
+    option {
+        text-align: center;
+    }
+    }
+}

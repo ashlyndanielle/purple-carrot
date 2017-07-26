@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import Header from './Header';
 import CartItems from './CartItems';
+import Delivery from './Delivery';
 import CartButtons from './CartButtons';
 
 import './Scss/Cart.css';

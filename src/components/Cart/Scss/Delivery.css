@@ -1,0 +1,17 @@
+.cart-delivery-main {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 40px 0; }
+  .cart-delivery-main p {
+    font-family: "Indie Flower", cursive;
+    font-size: 28px;
+    text-transform: uppercase; }
+  .cart-delivery-main select {
+    width: 20%;
+    border-color: #973894;
+    color: #973894;
+    margin-top: 10px;
+    text-transform: lowercase; }
+    .cart-delivery-main select option {
+      text-align: center; }

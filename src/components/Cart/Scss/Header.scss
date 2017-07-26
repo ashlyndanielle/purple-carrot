@@ -6,7 +6,41 @@
     background-position: bottom;
     height: 400px;
     width: 100vw;
-    font-family: $font;
-    box-shadow: 3px 4px 16px 1px black;
+    font-family: $font-secondary;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 5px 12px 1px black;
 
+    p {
+        font-size: 130px;
+        padding-top: 120px;
+        letter-spacing: 7px;
+    }
+
+}
+
+@media (max-width: 826px) {
+    .cart-header-main {
+        p {
+            padding-top: 70px;
+        }
+    }
+}
+    
+@media (max-width: 601px) {
+    .cart-header-main {
+        p {
+            font-size: 100px;
+            padding-top: 90px;
+        }
+    }
+}
+
+@media (max-width: 601px) {
+    .cart-header-main {
+        p {
+            font-size: 70px;
+            padding-top: 120px;
+        }
+    }
 }
