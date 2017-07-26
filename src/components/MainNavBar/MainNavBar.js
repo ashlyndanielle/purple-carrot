@@ -85,12 +85,12 @@ class MainNavBar extends Component {
                             <NavItem eventKey={2}>
                                 <Link to='/how-it-works' className='nav-links'>How it works</Link>
                             </NavItem>
-                             <NavItem eventKey={3}>
-                                <Link to='/cart' className='nav-links'>Cart</Link>
-                            </NavItem>           
                             <NavItem eventKey={4}>
                                 <Link to='/recipes' className='nav-links'>Recipes</Link>
                             </NavItem>
+                             <NavItem eventKey={3}>
+                                <Link to='/cart' className='nav-links'>Cart</Link>
+                            </NavItem>           
                         </Nav>
                         <Nav pullRight>
                                 { this.state.userIsLoggedIn 

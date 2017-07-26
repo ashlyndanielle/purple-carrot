@@ -33,7 +33,6 @@ class Menu extends Component {
     }   
     
     getCart() {
-        console.log("FIRED")
         axios.get('http://localhost:3001/getcart')
             .then( response => {
                 this.setState({
@@ -55,8 +54,6 @@ class Menu extends Component {
 
 
     render() {
-        
-        console.log('MY CART', this.state.cart)
         // need to map the cart items into the CartItems component
         let cartItems = this.state.cart.map( item => {
             return(

@@ -67,7 +67,7 @@ class Modals extends Component {
             <ButtonToolbar className='modal-main'>
                 <Button onMouseEnter={this.onHoverFn} onMouseLeave={this.offHoverFn} onClick={this.showModal} style={buttonBackground} className='button-styles'>
                     { 
-                        this.state.showName ? <div className='overlay'>{meal.name}</div> : null
+                        this.state.showName ? <div className='overlay'><p>{meal.name}</p></div> : null
                     }
                     
                 </Button>

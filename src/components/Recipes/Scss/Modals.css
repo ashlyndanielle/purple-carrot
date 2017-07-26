@@ -6,16 +6,25 @@
     background-size: cover;
     padding: 0; }
   .modal-main .overlay {
-    width: 100%;
+    width: 200px;
     height: 100%;
     font-family: "Poppins", sans-serif;
     text-align: center;
-    color: black; }
-  .modal-main .overlay:hover {
-    background-color: rgba(0, 0, 0, 0.5); }
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    position: relative; }
+    .modal-main .overlay p {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      font-size: 20px;
+      white-space: pre-line; }
 
 #contained-modal-title-lg {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  font-weight: 600; }
 
 .image-full {
   font-family: "Poppins", sans-serif;
@@ -23,16 +32,24 @@
   .image-full .the-image {
     width: 100%; }
 
-.meal-info .meal-description {
-  display: inline-block;
-  width: 80%;
-  padding-right: 20px; }
-
-.meal-info .nutrition {
-  text-align: center;
-  display: inline-block;
-  width: 20%; }
-  .meal-info .nutrition h1 {
-    font-weight: 600; }
-  .meal-info .nutrition p {
-    font-size: 12px; }
+.meal-info {
+  position: relative;
+  margin-top: 10px; }
+  .meal-info .meal-description {
+    display: inline-block;
+    width: 70%;
+    padding-right: 20px;
+    text-align: justify;
+    text-justify: inter-word; }
+  .meal-info .nutrition {
+    text-align: right;
+    position: absolute;
+    display: inline-block;
+    width: 30%; }
+    .meal-info .nutrition h1 {
+      font-weight: 600;
+      color: #973894;
+      margin-bottom: 10px; }
+    .meal-info .nutrition p {
+      font-size: 12px;
+      line-height: 1em; }
