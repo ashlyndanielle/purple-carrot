@@ -23,7 +23,9 @@
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.1.1",
     "react-slick": "^0.14.11",
-    "slick-carousel": "^1.6.0"
+    "react-stripe-checkout": "^2.4.0",
+    "slick-carousel": "^1.6.0",
+    "stripe": "^4.23.1"
   },
   "devDependencies": {
     "react-scripts": "1.0.10"

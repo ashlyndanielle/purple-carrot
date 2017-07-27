@@ -43,6 +43,7 @@
         border-radius: 5px;
         box-shadow: 0px 0px 15px 2px $green;
         font-weight: 600;
+        font-family: $font;
 
     }
 }
@@ -53,9 +54,23 @@
     background-position: bottom;
     box-shadow: -3px -4px 16px 1px black;
     width: 100%;
-    font-family: $font;
     height: 400px;
     margin: 0;
     text-align: center;
 
+}
+
+.StripeCheckout {
+    background: white !important;
+    box-shadow: 0px 0px 15px 2px $green !important;
+
+    span {
+        background-image: none !important;
+        color: $green !important;
+        font-size: 22px !important;
+        font-family: $font !important;
+        font-weight: 600 !important;
+        margin: 10px !important;
+        
+    }
 }

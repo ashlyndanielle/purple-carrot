@@ -4,6 +4,7 @@ import axios from 'axios';
 import Header from './Header';
 import CartItems from './CartItems';
 import CartButtons from './CartButtons';
+import Checkout from './Checkout';
 
 import './Scss/Cart.css';
 
