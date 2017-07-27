@@ -11,6 +11,7 @@ const stripe = require('stripe')(config.secret_key);
 
 const app = express();
 
+app.use(express.static(__dirname + '/../build'));
 // Middleware
 app.use(bodyParser.json());
 app.use(cors({origin: 'http://localhost:3000'}))

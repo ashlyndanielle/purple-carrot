@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 import Modals from './Modals';
+import RecipesHeader from './RecipesHeader';
 
 import './Scss/RecipesMain.css';
 
@@ -96,7 +97,8 @@ class RecipesMain extends Component {
 
         return (
             <div className='plans-main'>
-                 <div className='thumbnails-container'>
+                <RecipesHeader />
+                <div className='thumbnails-container'>
                      { recipeModal }
                 </div>
             </div>

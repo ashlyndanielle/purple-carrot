@@ -99,15 +99,6 @@ class MainNavBar extends Component {
                                     : 
                                         loggedOut
                                 }
-
-                                
-                            {/* </NavItem>
-                            <NavDropdown eventKey={3} title="Account" id="basic-nav-dropdown">
-                                  {isLoggedIn}  
-                                 <MenuItem divider />  
-                                <MenuItem eventKey={3.1}>Account Settings</MenuItem>
-                                <MenuItem eventKey={3.2} href="http://localhost:3001/auth/logout">Logout</MenuItem> 
-                             </NavDropdown>  */}
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

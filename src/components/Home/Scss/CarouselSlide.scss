@@ -5,10 +5,11 @@
     overflow: hidden;
 
     .recipe-slider {
-        transform: skew(-8.5deg);
+        transform: skew(-7.5deg);
         width: 130%;
         position: relative;
-        left: -265px;
+        left: -250px;
+        text-align: center;
         overflow: hidden;
         height: 420px;
 
@@ -16,6 +17,7 @@
             height: 420px;
             width: auto;
             margin: 0 20px;
+            position: relative;
 
             img {
                 // transform: skew(5.5deg);
@@ -27,9 +29,19 @@
             }
 
             .words {
-                color: black;
-                position: relative;
+                width: 100%;
+                color: white;
+                font-size: 22px;
+                position: absolute;
                 z-index: 999;
+                bottom: 60px;
+                text-align: center;
+                line-height: 34px;
+
+                h1 {
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                }
             }
         }
     }

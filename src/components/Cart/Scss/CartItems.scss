@@ -40,7 +40,7 @@
                 width: 90%;
                 padding-top: 5px;
                 text-align: center;
-                background-color: $green;
+                background-image: linear-gradient(rgb(184, 229, 98), rgb(153,202,60) 85%, rgb(93,138,9));
                 color: white;
                 border: none;
                 border-radius: 5px;
@@ -53,7 +53,7 @@
                 justify-content: center;
 
                 select {
-                    background-color: $green;
+                    background-image: linear-gradient(rgb(184, 229, 98), rgb(153,202,60) 85%, rgb(93,138,9));
                     color: white;
                     border-style: none;
                     font-size: 14px;

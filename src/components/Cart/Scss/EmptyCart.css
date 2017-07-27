@@ -1,0 +1,9 @@
+.empty-cart-main {
+  margin: 70px 30px;
+  font-size: 80px;
+  color: #973894;
+  font-family: "Indie Flower", cursive; }
+
+@media (max-width: 700px) {
+  .empty-cart-main {
+    font-size: 50px; } }

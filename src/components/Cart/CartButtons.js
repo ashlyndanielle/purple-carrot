@@ -20,10 +20,6 @@ class CartButtons extends Component {
 
     render() {
 
-        // const stripeStyle = {
-        //     color: 'purple !important'
-        // }
-
         const stripePayment = (<StripeCheckout 
             token={this.onToken}
             stripeKey={pubKey.pub_key}

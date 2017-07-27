@@ -1,0 +1,14 @@
+@import '../../globalVariables.scss';
+
+.empty-cart-main {
+    margin: 70px 30px;
+    font-size: 80px;
+    color: $purple;
+    font-family: $font-secondary;
+}
+
+@media (max-width: 700px) {
+    .empty-cart-main {
+        font-size: 50px;
+    }
+}

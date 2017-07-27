@@ -5,6 +5,7 @@ import Header from './Header';
 import CartItems from './CartItems';
 import CartButtons from './CartButtons';
 import Checkout from './Checkout';
+import EmptyCart from './EmptyCart';
 
 import './Scss/Cart.css';
 
@@ -16,7 +17,8 @@ class Menu extends Component {
             cart: [],
             loggedIn: {},
             quantity: 0,
-            cartTotal: 0
+            cartTotal: 0,
+            fullCart: false
         }
 
         this.deleteItem = this.deleteItem.bind(this);
@@ -44,6 +46,15 @@ class Menu extends Component {
                 this.setState({
                     cart: response.data
                 })
+                if (response.data === '') {
+                    this.setState({
+                        fullCart: false
+                    })
+                } else {
+                    this.setState({
+                        fullCart: true
+                    })
+                }
             })
 
         axios.get('http://localhost:3001/gettotal')
@@ -107,13 +118,21 @@ class Menu extends Component {
             )
         })
 
+        let emptyCart = <EmptyCart />
+
         console.log('Updated', this.state.cart)
 
         return (
             <div className='cart-main'>
                 <Header />
                 <div className='cart-items-container'>
-                    { cartItems }
+                    { emptyCart }
+                    { this.state.fullCart
+                        ?
+                            cartItems
+                        :
+                            emptyCart
+                        }
                 </div>
                 <CartButtons 
                     cartTotal={this.state.cartTotal}
