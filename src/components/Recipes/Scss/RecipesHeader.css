@@ -1,0 +1,22 @@
+.recipes-header-main {
+  background-image: url("../../../Images/recipes/recipes-heading.jpg");
+  height: 500px;
+  background-size: cover;
+  background-position: bottom;
+  position: relative; }
+  .recipes-header-main p {
+    font-family: "Indie Flower", cursive;
+    color: white;
+    text-shadow: -3px -3px 10px black;
+    padding-bottom: 10px; }
+  .recipes-header-main .title {
+    font-size: 85px;
+    padding-top: 50px;
+    padding-left: 50px;
+    position: absolute;
+    bottom: 0; }
+  .recipes-header-main .sub-title {
+    width: 100%;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+    padding-top: 3px; }

@@ -3,9 +3,7 @@
   .power-main .row {
     position: relative; }
     .power-main .row .img-artichoke {
-      position: absolute;
-      bottom: 0;
-      right: 0; }
+      object-fit: contain; }
     .power-main .row .main-text {
       margin-left: 50px; }
   .power-main h1 {
@@ -15,7 +13,7 @@
     letter-spacing: 5px;
     margin-top: 45px;
     margin-bottom: 50px;
-    font-family: "Indie Flower", cursive;
+    font-family: "Poppins", sans-serif;
     width: 100%;
     text-align: center; }
   .power-main p span {

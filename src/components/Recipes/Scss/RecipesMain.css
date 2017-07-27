@@ -1,11 +1,14 @@
 .plans-main {
-  margin-top: 90px;
+  margin-top: 75px;
   width: 100%;
   overflow: hidden; }
   .plans-main .thumbnails-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 10px; }
+    margin-top: 7px;
+    box-shadow: 0px -5px 12px 1px black;
+    width: 100%;
+    padding: 20px 80px; }
   .plans-main .thumbnails {
     padding: 10px; }

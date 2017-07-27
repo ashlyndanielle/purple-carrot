@@ -59,7 +59,10 @@ class Modals extends Component {
 
 
         const buttonBackground = {
-            backgroundImage: `url(${meal.thumbnail})`,
+            backgroundImage: `url(${meal.imagefull})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            borderStyle: 'none',
         }
 
         const isLoggedIn = (

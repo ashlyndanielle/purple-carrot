@@ -1,2 +1,32 @@
 @import '../../globalVariables.scss';
 
+.recipes-header-main {
+    background-image: url('../../../Images/recipes/recipes-heading.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+
+
+    p {
+        font-family: $font-secondary;
+        color: white;
+        text-shadow: -3px -3px 10px black;
+        padding-bottom: 10px;
+    }
+
+    .title {
+        font-size: 85px;
+        padding-top: 50px;
+        padding-left: 50px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .sub-title {
+        width: 100%;
+        letter-spacing: 2px;
+        margin-bottom: 35px;
+        padding-top: 3px;
+    }
+}

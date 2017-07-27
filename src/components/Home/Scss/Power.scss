@@ -6,9 +6,10 @@
     .row {
         position: relative;
         .img-artichoke {
-            position: absolute;
-            bottom: 0;
-            right: 0;
+            // position: absolute;
+            // bottom: 0;
+            // right: 0;
+            object-fit: contain;
         }
 
         .main-text {
@@ -24,7 +25,7 @@
         margin-top: 45px;
         margin-bottom: 50px;
         // text-transform: uppercase;
-        font-family: $font-secondary;
+        font-family: $font;
         width: 100%;
         text-align: center;
     }
