@@ -13,9 +13,9 @@ class Power extends Component {
         return (
             <div className='power-main'>
 
+                <h1 className='hidden-xs'>Nutrition Delivered</h1>
                 <div className='hidden-xs row'>
-                    <div className='col-sm-offset-1 col-sm-5'>
-                        <h1>Nutrition Delivered.</h1>
+                    <div className='main-text col-sm-6'>
                         <div className='bullets row'>
                             <div className="bulletpoint col-sm-12">
                                 <div className='img-wrapper col-sm-3'>
@@ -43,15 +43,18 @@ class Power extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className='col-lg-6 img-artichoke'>
+                    <div className='col-sm-6 img-artichoke'>
                         <img className='artichoke' src={artichoke} alt="box image"/>
                     </div>
                 </div>
 
+                
+
+
                 <div className='hidden-sm hidden-md hidden-lg hidden-xl'>
                     <div className='top-half'>
                         <div className='overlay'>
-                            <h1>Nutrition <br/>Delivered.</h1>
+                            <h1>Nutrition Delivered</h1>
                         </div>
                     </div>
                     <div className='bottom-half'>

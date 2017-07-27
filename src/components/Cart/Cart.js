@@ -43,16 +43,19 @@ class Menu extends Component {
     getCart() {
         axios.get('http://localhost:3001/getcart')
             .then( response => {
-                this.setState({
-                    cart: response.data
-                })
-                if (response.data === '') {
+                console.log("RAWR",response.data)
+                // this.setState({
+                //     cart: response.data
+                // })
+                if (response.data.length === 0) {
+                    console.log("meow");
                     this.setState({
                         fullCart: false
                     })
                 } else {
                     this.setState({
-                        fullCart: true
+                        fullCart: true,
+                        cart: response.data
                     })
                 }
             })
@@ -102,6 +105,7 @@ class Menu extends Component {
 
     render() {
         // need to map the cart items into the CartItems component
+        console.log('SOMETHING', this.state.fullCart)
         let cartItems = this.state.cart.map( item => {
             return(
                 <CartItems
@@ -126,17 +130,20 @@ class Menu extends Component {
             <div className='cart-main'>
                 <Header />
                 <div className='cart-items-container'>
-                    { emptyCart }
                     { this.state.fullCart
                         ?
                             cartItems
                         :
                             emptyCart
-                        }
+                    }
                 </div>
-                <CartButtons 
-                    cartTotal={this.state.cartTotal}
-                />
+                {
+                    this.state.fullCart
+                    ?
+                        <CartButtons cartTotal={this.state.cartTotal} />
+                    :
+                        null
+                }
             </div>
         );
     }
