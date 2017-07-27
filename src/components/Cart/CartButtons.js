@@ -11,15 +11,15 @@ class CartButtons extends Component {
                 <div className='total-price'>
                     <p>Cart Total:  ${this.props.cartTotal}</p>
                 </div>
+                <div className='row'>
+                    <stupid className='button-shop col-sm-6'>
+                        <button><Link to='/recipes' className='link'>CONTINUE SHOPPING</Link></button>
+                    </stupid>
+                    <stupid className='button-checkout col-sm-6'>
+                        <button><Link to='/checkout' className='link'>CHECKOUT</Link></button>
+                    </stupid>
+                </div>
                 <div className='buttons-main'>
-                    <div className='row'>
-                        <stupid className='button-shop col-md-6 col-sm-12'>
-                            <button><Link to='/recipes' className='link'>CONTINUE SHOPPING</Link></button>
-                        </stupid>
-                        <stupid className='button-checkout col-md-6 col-sm-12'>
-                            <button><Link to='/checkout' className='link'>CHECKOUT</Link></button>
-                        </stupid>
-                    </div>
                 </div>
             </div>
         );

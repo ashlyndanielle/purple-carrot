@@ -11,26 +11,40 @@ class RecipesMain extends Component {
 
         this.state = {
             mealPlans: [],
-            loggedIn: {},
+            loggedIn: false,
             quantity: 1,
             userid: null
         }
 
         this.addToCart = this.addToCart.bind(this);
         this.handleQuantity = this.handleQuantity.bind(this);
+        this.authenticationCall = this.authenticationCall.bind(this);
 
     }
 
-    componentDidMount () {
-        // this sets loggedin as the user object returned from auth0
+    authenticationCall() {
         axios.get('/auth/me')
             .then( response => {
                 console.log('FIND USER ID HERE', response)
                 this.setState({
-                    loggedIn: response.data,
                     userid: response.data.id
                 })
-            })
+
+            if (response.data === '') {
+                this.setState({
+                    loggedIn: false
+                })
+            } else {
+                this.setState({
+                    loggedIn: true
+                })
+            }
+        })
+    }
+
+    componentDidMount () {
+        // this sets loggedin as the user object returned from auth0
+        this.authenticationCall();
         // this is my database call to get my recipes
         axios.get('http://localhost:3001/getRecipes')
             .then( response => {
@@ -65,26 +79,7 @@ class RecipesMain extends Component {
     }
 
     render() {
-        
-        // let mealPlan = this.state.mealPlans.map((meal, i) => {
-        //     return(
-        //         <RecipesDetails 
-        //             price={meal.price}
-        //             name={meal.name}
-        //             imageFull={meal.imagefull}
-        //             thumbnail={meal.thumbnail}
-        //             description={meal.description}
-        //             servings={meal.servings}
-        //             calories={meal.calories}
-        //             fat={meal.fat}
-        //             carbs={meal.carbs}
-        //             protein={meal.protein}
-        //             key={i} 
-        //         />
-        //         // <div key={i}>ID: {meal.id} -- NAME: {meal.name}</div>
-        //     )
-        // })
-
+ 
         let recipeModal = this.state.mealPlans.map( meal => {
             return(
                 <Modals
@@ -92,6 +87,8 @@ class RecipesMain extends Component {
                     meal={meal}
                     addToCart={this.addToCart}
                     handleQuantity={this.handleQuantity}
+                    authenticationCall={this.authenticationCall}
+                    loggedIn={this.state.loggedIn}
                 />
             )
         })

@@ -8,9 +8,42 @@
     .total-price {
         font-family: $font-secondary;
         font-size: 70px;
-        padding: 30px 0 40px 0;
+        padding: 30px 0 20px 0;
         letter-spacing: 3px;
         white-space: pre-wrap;
+    }
+        .link {
+            color: $green;
+        }
+
+        .link:hover {
+            text-decoration: none;
+        }
+
+    .row {
+        margin: 10px 0 50px 0;
+    }
+
+    .button-shop {
+        text-align: right;
+    }
+
+    .button-checkout {
+        text-align: left;
+    }
+
+    button {
+        font-size: 22px;
+        background-color: white;
+        color: $green;
+        margin: 10px;
+        border: none;
+        padding: 15px 20px;
+        // border: 2px solid white;
+        border-radius: 5px;
+        box-shadow: 0px 0px 15px 2px $green;
+        font-weight: 600;
+
     }
 }
 
@@ -21,36 +54,8 @@
     box-shadow: -3px -4px 16px 1px black;
     width: 100%;
     font-family: $font;
-    padding: 100px 75px;
+    height: 400px;
     margin: 0;
     text-align: center;
 
-    .button-checkout {
-        // text-align: left;
-    }
-
-    .button-shop {
-        // text-align: right;
-    }
-
-    button {
-        font-size: 22px;
-        background-color: white;
-        color: $green;
-        border: none;
-        padding: 15px 20px;
-        margin: 10px;
-        // border: 2px solid white;
-        border-radius: 5px;
-        box-shadow: 0px 0px 15px 2px $green;
-        font-weight: 600;
-
-        .link {
-            color: $green;
-        }
-
-        .link:hover {
-            text-decoration: none;
-        }
-    }
 }

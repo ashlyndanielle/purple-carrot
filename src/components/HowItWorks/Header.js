@@ -15,7 +15,7 @@ const Header = () => {
             </div>
             <div className='mobile-bottom hidden-lg hidden-md hidden-sm'>
                 <div className='p-text'>
-                    <p>SELECT YOUR PLAN</p>
+                    <p>SELECT YOUR RECIPES</p>
                     <p>AND WE'LL DO THE REST.</p>
                 </div>
                 <div className='plans-button'>
@@ -35,8 +35,8 @@ const Header = () => {
                 </div>
                 <p className='sub-title col-sm-10 col-sm-offset-2'>SELELCT YOUR PLAN AND WE'LL DO THE REST</p>
                 <div className='large-button col-sm-10 col-sm-offset-2'>
-                    <Link to='/plans' className='plans-link'>
-                        VIEW PLANS
+                    <Link to='/recipes' className='plans-link'>
+                        VIEW RECIPES
                     </Link>
                 </div>
             </div>  

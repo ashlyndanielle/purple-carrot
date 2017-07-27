@@ -61,6 +61,30 @@ class Modals extends Component {
         const buttonBackground = {
             backgroundImage: `url(${meal.thumbnail})`,
         }
+
+        const isLoggedIn = (
+            <Modal.Footer>
+                <Button onClick={() => this.handleAddToCart(meal)}>Add to Cart</Button>
+                
+                <select onChange={ e => this.props.handleQuantity(e)}>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                </select>
+                <Button onClick={this.hideModal}>Close</Button>
+            </Modal.Footer>
+        )
+
+        const notLoggedIn = (
+            <Modal.Footer>
+                <Button><a href="http://localhost:3001/auth">Log in to continue</a></Button>
+                
+                <Button onClick={this.hideModal}>Close</Button>
+            </Modal.Footer>
+        )
         
         // console.log(this.state.showName);
         return (
@@ -94,7 +118,13 @@ class Modals extends Component {
                             </div>
                         </div>
                     </Modal.Body>
-                    <Modal.Footer>
+                    { this.props.loggedIn
+                        ?
+                            isLoggedIn
+                        :
+                            notLoggedIn
+                    }
+                    {/* <Modal.Footer>
                         <Button onClick={() => this.handleAddToCart(meal)}>Add to Cart</Button>
                        
                         <select onChange={ e => this.props.handleQuantity(e)}>
@@ -106,7 +136,7 @@ class Modals extends Component {
                             <option>6</option>
                         </select>
                         <Button onClick={this.hideModal}>Close</Button>
-                    </Modal.Footer>
+                    </Modal.Footer> */}
                 </Modal>
             </ButtonToolbar>
         );

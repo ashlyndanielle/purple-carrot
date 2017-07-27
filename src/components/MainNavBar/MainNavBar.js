@@ -53,7 +53,7 @@ class MainNavBar extends Component {
                         <Link to='/shoppingcart' className='nav-links'>Shopping Cart</Link>
                     </MenuItem>
                 </NavDropdown>
-    )
+        )
         const loggedOut= (<MenuItem eventKey={5.1} href="http://localhost:3001/auth">Login</MenuItem>)
 
         // let isLoggedIn = false;
