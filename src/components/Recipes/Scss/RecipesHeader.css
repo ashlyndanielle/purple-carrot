@@ -19,3 +19,8 @@
     letter-spacing: 2px;
     margin-bottom: 35px;
     padding-top: 3px; }
+  .recipes-header-main .box-shadow {
+    width: 100%;
+    box-shadow: -1px -1px 10px 2px black;
+    position: absolute;
+    bottom: 0; }

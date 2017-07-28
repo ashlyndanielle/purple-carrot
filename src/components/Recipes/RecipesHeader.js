@@ -10,6 +10,7 @@ const RecipesHeader = () => {
                 <p>our Delicious Recipes.</p>
                 <p className='sub-title'>We'll deliver right to your door</p>
             </div>
+            <div className='box-shadow'></div>
         </div>
     );
 };
