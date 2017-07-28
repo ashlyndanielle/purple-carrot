@@ -34,14 +34,14 @@ const Footer = () => {
                 </div>
             </div>
             <div className='links'>
-                <Link className='page-links' to='/why-plants'>Why Plants</Link>
-                <Link className='page-links' to='/how-it-works'>How it Works</Link>
+                <Link className='page-links' to='/why-plants'>Nutrition</Link>
+                {/* <Link className='page-links' to='/how-it-works'>How it Works</Link> */}
+                <Link className='page-links' to='/recipes'>plant-based Recipes</Link>
+                   <div className='page-links non-links'>vegan food pyramid</div>   
                 <Link className='page-links' to='/cart'>Cart</Link>
-                <Link className='page-links' to='/recipes'>Recipes</Link>
             </div>
             <div className='links'>
-                <div className='page-links non-links'>plant-based recipes</div>
-                <div className='page-links non-links'>vegan food pyramid</div>
+                 {/* <div className='page-links non-links'>plant-based recipes</div>  */}
             </div>
         </div>
     );
