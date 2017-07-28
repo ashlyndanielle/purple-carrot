@@ -1,11 +1,19 @@
 .power-main {
   font-family: "Poppins", sans-serif; }
   .power-main .fixing {
-    position: relative; }
+    position: relative;
+    height: 500px; }
     .power-main .fixing .main-text {
-      padding-top: 150px;
+      padding-top: 7%;
       padding-left: 50px;
-      border: 1px solid red; }
+      height: 100%; }
+    .power-main .fixing .img-artichoke {
+      background-image: url("../../../Images/homeView/artichoke.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      position: relative;
+      width: 50vw; }
   .power-main h1 {
     font-weight: 600;
     font-size: 60px;

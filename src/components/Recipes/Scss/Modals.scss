@@ -39,10 +39,13 @@
     }
 
 }
+.title-background {
+    background-color: $purple;
+}
 
 #contained-modal-title-lg {
     font-family: $font;
-    // color: $purple;
+    color: white;
     font-weight: 600;
     // text-transform: uppercase;
 }
@@ -61,30 +64,80 @@
     position: relative;
     margin-top: 10px;
 
+
     .meal-description {
         display: inline-block;
-        width: 70%;
+        width: 60%;
         padding-right: 20px;
         text-align: justify;
         text-justify: inter-word;
     }
 
     .nutrition {
+        display: flex;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 5px;
+        }
+
         h1 {
             font-weight: 600;
-            color: $purple;
-            margin-bottom: 10px;
+            color: white;
+            background-color: $purple;
+            // margin-bottom: 20%;
+            font-size: 18px;
+            padding: 3% 0;
         }
 
         p {
-            font-size: 12px;
-            line-height: 1em;
+            font-size: 14px;
+            line-height: 1.2em;
         }
 
-        text-align: right;
+        text-align: center;
         position: absolute;
         display: inline-block;
-        width: 30%;
+        width: 40%;
+        height: 100%;
+        // font-family: $font-secondary;
+        box-shadow: 0px 0px 5px 1px 
     }
 }
 
+.not-logged-in {
+    font-family: $font;
+    text-align: left;
+
+    Button {
+        background-image: $purpleGradient;
+        color: white;
+
+        a {
+            color: white;
+        }
+    }
+}
+ 
+.logged-in {
+    font-family: $font;
+    text-align: left;
+
+    Button {
+        background-image: $purpleGradient;
+        color: white;
+
+        a {
+            color: white;
+        }
+    }
+
+    select {
+        background-image: $purpleGradient;
+        color: white;
+        height: 33px;
+        margin: 0 7px;
+    }
+}

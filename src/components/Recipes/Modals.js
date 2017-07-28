@@ -66,23 +66,23 @@ class Modals extends Component {
         }
 
         const isLoggedIn = (
-            <Modal.Footer>
+            <Modal.Footer className='logged-in'>
                 <Button onClick={() => this.handleAddToCart(meal)}>Add to Cart</Button>
                 
                 <select onChange={ e => this.props.handleQuantity(e)}>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
+                    <option>1 Serving</option>
+                    <option>2 Servings</option>
+                    <option>3 Servings</option>
+                    <option>4 Servings</option>
+                    <option>5 Servings</option>
+                    <option>6 Servings</option>
                 </select>
-                <Button onClick={this.hideModal}>Close</Button>
+                <Button className='close-button' onClick={this.hideModal}>Close</Button>
             </Modal.Footer>
         )
 
         const notLoggedIn = (
-            <Modal.Footer>
+            <Modal.Footer className='not-logged-in'>
                 <Button><a href="http://localhost:3001/auth">Log in to continue</a></Button>
                 
                 <Button onClick={this.hideModal}>Close</Button>
@@ -104,8 +104,9 @@ class Modals extends Component {
                     show={this.state.show}
                     onHide={this.hideModal}
                     dialogClassName="custom-modal"
+                    className='modal-popup'
                 >
-                    <Modal.Header closeButton>
+                    <Modal.Header closeButton className='title-background'>
                         <Modal.Title id="contained-modal-title-lg">{ meal.name }</Modal.Title>
                     </Modal.Header>
                     <Modal.Body className='image-full'>
@@ -114,10 +115,12 @@ class Modals extends Component {
                             <p className='meal-description'>{ meal.description }</p>
                             <div className='nutrition'>
                                 <h1>NUTRITION INFORMATION</h1>
-                                <p>CALORIES: {meal.calories}</p>
-                                <p>PROTEIN: {meal.protein}</p>
-                                <p>CARBS: {meal.carbs}</p>
-                                <p>FAT: {meal.fat}</p>
+                                <div>
+                                    <p>CALORIES: {meal.calories}</p>
+                                    <p>PROTEIN: {meal.protein}</p>
+                                    <p>CARBS: {meal.carbs}</p>
+                                    <p>FAT: {meal.fat}</p>
+                                </div>
                             </div>
                         </div>
                     </Modal.Body>
@@ -127,19 +130,6 @@ class Modals extends Component {
                         :
                             notLoggedIn
                     }
-                    {/* <Modal.Footer>
-                        <Button onClick={() => this.handleAddToCart(meal)}>Add to Cart</Button>
-                       
-                        <select onChange={ e => this.props.handleQuantity(e)}>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                        </select>
-                        <Button onClick={this.hideModal}>Close</Button>
-                    </Modal.Footer> */}
                 </Modal>
             </ButtonToolbar>
         );

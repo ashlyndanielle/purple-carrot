@@ -80,11 +80,11 @@ class MainNavBar extends Component {
                     <Navbar.Collapse className='vertical-align'>
                         <Nav>
                             <NavItem eventKey={1}>
-                                <Link to='/wfpb' className='nav-links'>WFPB</Link>
+                                <Link to='/wfpb' className='nav-links'>Nutrition</Link>
                             </NavItem>
-                            <NavItem eventKey={2}>
+                            {/* <NavItem eventKey={2}>
                                 <Link to='/how-it-works' className='nav-links'>How it works</Link>
-                            </NavItem>
+                            </NavItem> */}
                             <NavItem eventKey={4}>
                                 <Link to='/recipes' className='nav-links'>Recipes</Link>
                             </NavItem>

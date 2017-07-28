@@ -44,7 +44,7 @@ class Power extends Component {
                         </div>
                     </div>
                     <div className='col-sm-6 img-artichoke'>
-                        <img className='artichoke' src={artichoke} alt="box image"/>
+                        {/* <img className='artichoke' src={artichoke} alt="box image"/> */}
                     </div>
                 </div>
 

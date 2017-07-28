@@ -9,7 +9,8 @@
   .buttons-main-container .link {
     color: #99CA3C; }
   .buttons-main-container .link:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: white; }
   .buttons-main-container .row {
     margin: 10px 0 50px 0; }
   .buttons-main-container .button-shop {
@@ -27,6 +28,10 @@
     box-shadow: 0px 0px 15px 2px #99CA3C;
     font-weight: 600;
     font-family: "Poppins", sans-serif; }
+  .buttons-main-container button:hover {
+    background-color: #99CA3C; }
+    .buttons-main-container button:hover .link {
+      color: white; }
 
 .buttons-main {
   background-image: url("../../../Images/cart/cart-image-2.jpg");
@@ -50,3 +55,10 @@
     margin: 10px !important;
     text-transform: uppercase !important;
     text-shadow: none !important; }
+
+.StripeCheckout:hover {
+  background: #99CA3C !important; }
+  .StripeCheckout:hover span {
+    color: white !important;
+    border-style: none !important;
+    box-shadow: none !important; }
