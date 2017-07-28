@@ -45,7 +45,7 @@
     }
 
     .yoga-mom {
-        transform: skew(-5.5deg) scale(1.05);
+        transform: skewX(-5.5deg);
         margin-left: 60px;
         width: 75%;
         overflow: hidden;
@@ -53,7 +53,7 @@
         img {
             width: 100%;
             margin-left: -80px;
-            transform: skew(5.5deg) scale(1.05);
+            // transform: skewX(5.5deg);
         }
     }
 
@@ -68,5 +68,7 @@
         z-index: -19;
         margin-top: -235px;
         padding: 0;
+        position: absolute;
+        bottom: 0;
     }
 }

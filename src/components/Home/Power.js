@@ -14,7 +14,7 @@ class Power extends Component {
             <div className='power-main'>
 
                 <h1 className='hidden-xs'>Nutrition Delivered</h1>
-                <div className='hidden-xs row'>
+                <div className='hidden-xs row fixing'>
                     <div className='main-text col-sm-6'>
                         <div className='bullets row'>
                             <div className="bulletpoint col-sm-12">
