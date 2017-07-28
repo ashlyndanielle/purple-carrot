@@ -3,20 +3,21 @@ import { Link } from 'react-router-dom';
 import StripeCheckout from 'react-stripe-checkout';
 import pubKey from './StripeKey';
 import axios from 'axios';
-
+import { withRouter } from 'react-router'
 import './Scss/CartButtons.css';
 
 class CartButtons extends Component {
+
 
 
     onToken = (token) => {
         token.card = void 0;
         console.log('token', token);
         axios.post('http://localhost:3001/payment', { token, amount: this.props.cartTotal } ).then(response => {
-            alert('Thank You!')
-            
+            this.props.history.push('/')
         });
     }
+    
 
     render() {
 
@@ -38,7 +39,7 @@ class CartButtons extends Component {
                         <button><Link to='/recipes' className='link'>CONTINUE SHOPPING</Link></button>
                     </stupid>
                     <stupid className='button-checkout col-sm-6'>
-                        <Link to='/' className='payment'>{stripePayment}</Link>
+                        <Link to='/cart' className='payment'>{stripePayment}</Link>
                     </stupid>
                 </div>
                 <div className='buttons-main'>
@@ -48,4 +49,4 @@ class CartButtons extends Component {
     }
 };
 
-export default CartButtons;
+export default withRouter(CartButtons);
