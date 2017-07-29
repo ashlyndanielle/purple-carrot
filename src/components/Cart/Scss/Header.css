@@ -21,3 +21,10 @@
   .cart-header-main p {
     font-size: 100px;
     padding-top: 90px; } }
+
+@media (max-width: 440px) {
+  .cart-header-main {
+    height: 300px; }
+    .cart-header-main p {
+      font-size: 80px;
+      padding-top: 70px; } }
