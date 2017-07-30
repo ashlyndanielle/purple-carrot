@@ -70,12 +70,12 @@ class Modals extends Component {
                 <Button onClick={() => this.handleAddToCart(meal)}>Add to Cart</Button>
                 
                 <select onChange={ e => this.props.handleQuantity(e)}>
-                    <option>1 Serving</option>
-                    <option>2 Servings</option>
-                    <option>3 Servings</option>
-                    <option>4 Servings</option>
-                    <option>5 Servings</option>
-                    <option>6 Servings</option>
+                    <option>1</option>Serving
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
                 </select>
                 <Button className='close-button' onClick={this.hideModal}>Close</Button>
             </Modal.Footer>
