@@ -30,12 +30,12 @@ const Collage = () => {
                         <div className='col-md-7 right-inner-container'>
                             <div className='right-inner-top'>WHAT DO VEGANS EAT</div>
                             <div className='right-inner-bottom row'>
-                                <div className='col-sm-6'>
+                                <div className='col-xs-6'>
                                     <a href="https://www.forksoverknives.com/what-to-eat/#gs.dHO9lE4">
                                         <img className='logo second' src={forks}/>
                                     </a>
                                 </div>
-                                <div className='col-sm-6'>
+                                <div className='col-xs-6'>
                                     <img className='logo first' src={vegan}/>
                                 </div>
                             </div>

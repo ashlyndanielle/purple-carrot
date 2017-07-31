@@ -1,0 +1,201 @@
+@import '../../globalVariables.scss';
+
+.food-main {
+    font-family: $font;
+    background-color: black;
+    color: beige;
+    font-size: 20px;
+
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 20%;
+        height: 55px;
+        width: 100%;
+        background-color: black;
+    }
+
+    .icon-div1 {
+        background-size: cover;
+        background-position: center;
+        background-image: url('../../../Images/nutrition/apple.png');
+        height: 50px;
+        width: 50px;
+        filter: invert(100%);
+    }
+
+    .icon-div2 {
+        background-size: cover;
+        background-position: center;
+        background-image: url('../../../Images/nutrition/heart.png');
+        height: 50px;
+        width: 50px;
+        filter: invert(100%);
+    }
+
+    .icon-div3 {
+        background-size: cover;
+        background-position: center;
+        background-image: url('../../../Images/nutrition/hands.jpeg');
+        height: 50px;
+        width: 50px;
+        filter: invert(100%);
+    }
+
+    .icon-div4 {
+        background-size: cover;
+        background-position: center;
+        background-image: url('../../../Images/nutrition/steth.png');
+        height: 50px;
+        width: 50px;
+        filter: invert(100%);
+    }
+
+    .icon-div5 {
+        background-size: cover;
+        background-position: center;
+        background-image: url('../../../Images/nutrition/cross.png');
+        height: 55px;
+        width: 50px;
+        filter: invert(100%);
+    }
+
+    .nutrients {
+        height: 100vh;
+        width: 100%;
+        max-width: 1700px;
+        margin: 0 auto;
+
+        .left-column {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+
+            .veggies {
+                height: 50%;
+                width: 100%;
+                background: url('../../../Images/nutrition/pineapple.jpg');
+                background-size: cover;
+                text-align: center;
+            }
+
+            .fruits {
+                height: 50%;
+                width: 100%;
+                background: lightseagreen;
+                text-align: center;
+            }
+        }
+
+        .right-column {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+
+            .fats {
+                width: 100%;
+                background: rgba(#A55E63, 0.5);
+                // background: rgb(219,212,202);
+                height: 30%;
+                margin: 0;
+                padding: 0;
+
+                .overlay {
+                    // background: rgba(50, 70, 100, 0.8);
+                    // width: 100%;
+                    height: 100%;
+                    color: beige;
+                    padding: 20px;
+                    display: flex;
+                    justify-content: space-around;
+
+                    p {
+                        padding: 0 10px;
+                        text-align: justify;
+                        letter-spacing: 1px;
+                        overflow: scroll;
+                    }
+                }
+
+                .hidden-xs {
+                    height: 100%;
+                    background: url('../../../Images/nutrition/lettuce.jpg');
+                    background-size: cover;
+                }
+            }
+
+            .staples-column {
+                height: 70%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+
+                .protein-column {
+                    height: 100%;
+                    padding: 0;
+                    margin: 0;
+
+                    .protein {
+                        height: 70%;
+                        width: 100%;
+                        padding: 0;
+                        margin: 0;
+                        background: url('../../../Images/nutrition/protein.jpg');
+                        background-size: cover;
+                        background-position: center;
+                        
+                        .overlay {
+                            text-align: center;
+                            padding: auto 20px;
+                            display: flex;
+                            justify-content: center;
+                            align-content: center;
+                            flex-direction: column;
+                            height: 100%;
+                            width: 100%;
+                            background: rgba(0, 0, 0, 0.4);
+                            letter-spacing: 1px;
+                            // color: sienna;
+
+                            h1 {
+                                width: 100%;
+                                font-size: 35px;
+                                padding: 20px;
+                            }
+                        }
+
+
+                        circle {
+                            height: 200px;
+                            width: 200px;
+                            // border: $border;
+                            border-radius: 50%;
+                            margin: 10px;
+                        }
+                    }
+
+                    .links {
+                        // background: url('../../../Images/nutrition/pears.jpg');
+                        // background-size: cover;
+                        // background-position: center;
+                        background: rgb(38, 63, 39);
+                        height: 30%;
+                        width: 100%;
+                    }
+                }
+
+                .grains {
+                    height: 100%;
+                    padding: 0;
+                    margin: 0;
+                    background: #5D7B5E;
+                    text-align: center;
+                    background: url('../../../Images/nutrition/garlic.jpg');
+                    background-size: cover;
+                    background-position: left;
+                }
+            }
+
+        }
+    }
+}

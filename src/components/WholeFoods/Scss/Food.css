@@ -1,0 +1,142 @@
+.food-main {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: beige;
+  font-size: 20px; }
+  .food-main .icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20%;
+    height: 55px;
+    width: 100%;
+    background-color: black; }
+  .food-main .icon-div1 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../../Images/nutrition/apple.png");
+    height: 50px;
+    width: 50px;
+    filter: invert(100%); }
+  .food-main .icon-div2 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../../Images/nutrition/heart.png");
+    height: 50px;
+    width: 50px;
+    filter: invert(100%); }
+  .food-main .icon-div3 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../../Images/nutrition/hands.jpeg");
+    height: 50px;
+    width: 50px;
+    filter: invert(100%); }
+  .food-main .icon-div4 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../../Images/nutrition/steth.png");
+    height: 50px;
+    width: 50px;
+    filter: invert(100%); }
+  .food-main .icon-div5 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../../Images/nutrition/cross.png");
+    height: 55px;
+    width: 50px;
+    filter: invert(100%); }
+  .food-main .nutrients {
+    height: 100vh;
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto; }
+    .food-main .nutrients .left-column {
+      height: 100%;
+      margin: 0;
+      padding: 0; }
+      .food-main .nutrients .left-column .veggies {
+        height: 50%;
+        width: 100%;
+        background: url("../../../Images/nutrition/pineapple.jpg");
+        background-size: cover;
+        text-align: center; }
+      .food-main .nutrients .left-column .fruits {
+        height: 50%;
+        width: 100%;
+        background: lightseagreen;
+        text-align: center; }
+    .food-main .nutrients .right-column {
+      height: 100%;
+      margin: 0;
+      padding: 0; }
+      .food-main .nutrients .right-column .fats {
+        width: 100%;
+        background: rgba(165, 94, 99, 0.5);
+        height: 30%;
+        margin: 0;
+        padding: 0; }
+        .food-main .nutrients .right-column .fats .overlay {
+          height: 100%;
+          color: beige;
+          padding: 20px;
+          display: flex;
+          justify-content: space-around; }
+          .food-main .nutrients .right-column .fats .overlay p {
+            padding: 0 10px;
+            text-align: justify;
+            letter-spacing: 1px;
+            overflow: scroll; }
+        .food-main .nutrients .right-column .fats .hidden-xs {
+          height: 100%;
+          background: url("../../../Images/nutrition/lettuce.jpg");
+          background-size: cover; }
+      .food-main .nutrients .right-column .staples-column {
+        height: 70%;
+        width: 100%;
+        margin: 0;
+        padding: 0; }
+        .food-main .nutrients .right-column .staples-column .protein-column {
+          height: 100%;
+          padding: 0;
+          margin: 0; }
+          .food-main .nutrients .right-column .staples-column .protein-column .protein {
+            height: 70%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            background: url("../../../Images/nutrition/protein.jpg");
+            background-size: cover;
+            background-position: center; }
+            .food-main .nutrients .right-column .staples-column .protein-column .protein .overlay {
+              text-align: center;
+              padding: auto 20px;
+              display: flex;
+              justify-content: center;
+              align-content: center;
+              flex-direction: column;
+              height: 100%;
+              width: 100%;
+              background: rgba(0, 0, 0, 0.4);
+              letter-spacing: 1px; }
+              .food-main .nutrients .right-column .staples-column .protein-column .protein .overlay h1 {
+                width: 100%;
+                font-size: 35px;
+                padding: 20px; }
+            .food-main .nutrients .right-column .staples-column .protein-column .protein circle {
+              height: 200px;
+              width: 200px;
+              border-radius: 50%;
+              margin: 10px; }
+          .food-main .nutrients .right-column .staples-column .protein-column .links {
+            background: #263f27;
+            height: 30%;
+            width: 100%; }
+        .food-main .nutrients .right-column .staples-column .grains {
+          height: 100%;
+          padding: 0;
+          margin: 0;
+          background: #5D7B5E;
+          text-align: center;
+          background: url("../../../Images/nutrition/garlic.jpg");
+          background-size: cover;
+          background-position: left; }
