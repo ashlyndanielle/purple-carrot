@@ -50,7 +50,7 @@ class MainNavBar extends Component {
                 <NavDropdown eventKey={5} title="Account" id="basic-nav-dropdown">
                     <MenuItem eventKey={3.2} href="http://localhost:3001/auth/logout">Logout</MenuItem>
                     <MenuItem eventKey={3.2}>
-                        <Link to='/shoppingcart' className='nav-links'>Shopping Cart</Link>
+                        <Link to='/cart' className='nav-links'>Cart</Link>
                     </MenuItem>
                 </NavDropdown>
         )

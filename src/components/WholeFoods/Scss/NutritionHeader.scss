@@ -3,21 +3,43 @@
 .nutrition-header-main {
     width: 100%;
     height: 400px;
-    background-image: url('../../../Images/nutrition/gifts-image.jpg');
+    background-image: url('../../../Images/nutrition/garden.jpg');
     background-size: cover;
     background-position: bottom;
+    background-attachment: fixed;
     font-family: $font-secondary;
-    font-size: 70px;
-    text-shadow: 1px 1px black;
+    font-size: 77px;
+    color: white;
+    text-shadow: 1px 1px white;
     text-align: center;
     line-height: 1.3em;
     letter-spacing: 10px;
     margin: 0px;
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.2);
+        height: 100%;
+        width: 100%;
+    }
 
     .title {
         height: 100%;
         display: flex;
         justify-content: center;
         flex-direction: column;
+    }
+}
+
+@media (max-width: 1086px) {
+    .nutrition-header-main {
+        font-size: 60px;
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 515px) {
+    .nutrition-header-main {
+        font-size: 40px;
+        // padding: 0 30px;
     }
 }

@@ -1,5 +1,15 @@
 .modal-main {
   padding: 10px; }
+  .modal-main .sweet-alert {
+    font-family: "Poppins", sans-serif; }
+    .modal-main .sweet-alert h2 {
+      margin-top: 24px; }
+    .modal-main .sweet-alert span {
+      display: flex;
+      justify-content: center; }
+      .modal-main .sweet-alert span button {
+        background-image: linear-gradient(#af59ab, #973893 85%, #6b0e67);
+        border-style: none; }
   .modal-main .button-styles {
     height: 300px;
     width: 300px;
@@ -72,23 +82,30 @@
 
 .not-logged-in {
   font-family: "Poppins", sans-serif;
+  width: 100%;
   text-align: left; }
-  .not-logged-in Button {
-    background-image: linear-gradient(#af59ab, #973893 85%, #6b0e67);
-    color: white; }
-    .not-logged-in Button a {
+  .not-logged-in .modal-button-box {
+    display: flex;
+    justify-content: space-between; }
+    .not-logged-in .modal-button-box Button {
+      background-image: linear-gradient(#af59ab, #973893 85%, #6b0e67);
       color: white; }
+      .not-logged-in .modal-button-box Button a {
+        color: white; }
 
 .logged-in {
   font-family: "Poppins", sans-serif;
   text-align: left; }
-  .logged-in Button {
-    background-image: linear-gradient(#af59ab, #973893 85%, #6b0e67);
-    color: white; }
-    .logged-in Button a {
+  .logged-in .modal-button-box {
+    display: flex;
+    justify-content: space-between; }
+    .logged-in .modal-button-box Button {
+      background-image: linear-gradient(#af59ab, #973893 85%, #6b0e67);
       color: white; }
-  .logged-in select {
-    background-image: linear-gradient(#af59ab, #973893 85%, #6b0e67);
-    color: white;
-    height: 33px;
-    margin: 0 7px; }
+      .logged-in .modal-button-box Button a {
+        color: white; }
+    .logged-in .modal-button-box select {
+      background-image: linear-gradient(#af59ab, #973893 85%, #6b0e67);
+      color: white;
+      height: 33px;
+      margin: 0 7px; }

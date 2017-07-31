@@ -5,12 +5,12 @@ import './Scss/NutritionHeader.css';
 const NutritionHeader = () => {
     return (
         <div className='nutrition-header-main row'>
-            <div className='col-sm-6 title'>
-                <p>Whole Foods</p>
-                <p>Plant-Based</p>
-                <p>Nutrition</p>
+            <div className='overlay'>
+                <div className='col-md-6 title'>
+                    <p>Whole Foods Plant-Based Nutrition</p>
+                </div>
+                <div className='col-md-6'></div>
             </div>
-            <div className='col-sm-6'></div>
         </div>
     );
 };

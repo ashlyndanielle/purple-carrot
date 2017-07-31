@@ -9,6 +9,24 @@
     // align-content: space-around;
     padding: 10px;
 
+    .sweet-alert {
+        font-family: $font;
+
+        h2 {
+            margin-top: 24px;
+        }
+        
+        span {
+            display: flex;
+            justify-content: center;
+
+            button {
+                background-image: $purpleGradient;
+                border-style: none;
+            }
+        }
+    }
+
     .button-styles {
         height: 300px;
         width: 300px;
@@ -109,14 +127,20 @@
 
 .not-logged-in {
     font-family: $font;
+    width: 100%;
     text-align: left;
 
-    Button {
-        background-image: $purpleGradient;
-        color: white;
+    .modal-button-box {
+        display: flex;
+        justify-content: space-between;
 
-        a {
+        Button {
+            background-image: $purpleGradient;
             color: white;
+
+            a {
+                color: white;
+            }
         }
     }
 }
@@ -125,19 +149,24 @@
     font-family: $font;
     text-align: left;
 
-    Button {
-        background-image: $purpleGradient;
-        color: white;
-
-        a {
+    .modal-button-box {
+        display: flex;
+        justify-content: space-between;
+        
+        Button {
+            background-image: $purpleGradient;
             color: white;
-        }
-    }
 
-    select {
-        background-image: $purpleGradient;
-        color: white;
-        height: 33px;
-        margin: 0 7px;
+            a {
+                color: white;
+            }
+        }
+
+        select {
+            background-image: $purpleGradient;
+            color: white;
+            height: 33px;
+            margin: 0 7px;
+        }
     }
 }

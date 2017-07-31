@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import SweetAlert from 'react-bootstrap-sweetalert';
 
 import { ButtonToolbar, Button, Modal } from 'react-bootstrap';
 
@@ -11,7 +12,8 @@ class Modals extends Component {
 
         this.state = {
             show: false,
-            showName: false
+            showName: false,
+            showAlert: false,
         }
 
         this.showModal = this.showModal.bind(this);
@@ -30,7 +32,8 @@ class Modals extends Component {
 
     hideModal() {
         this.setState({
-            show: false
+            show: false,
+            showAlert: false
         });
     }
 
@@ -38,7 +41,10 @@ class Modals extends Component {
     // Both occur when you click on the button "Add to cart"
     handleAddToCart(meal) {
         this.props.addToCart(meal);
-        this.hideModal();
+        this.setState({
+            showAlert: true
+        })
+        // this.hideModal();
     }
 
     onHoverFn() {
@@ -67,25 +73,31 @@ class Modals extends Component {
 
         const isLoggedIn = (
             <Modal.Footer className='logged-in'>
-                <Button onClick={() => this.handleAddToCart(meal)}>Add to Cart</Button>
-                
-                <select onChange={ e => this.props.handleQuantity(e)}>
-                    <option>1</option>Serving
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                </select>
-                <Button className='close-button' onClick={this.hideModal}>Close</Button>
+                <div className="modal-button-box">
+                    <div>
+                        <Button onClick={() => this.handleAddToCart(meal)}>Add to Cart</Button>
+                        
+                        <select onChange={ e => this.props.handleQuantity(e)}>
+                            <option>1</option>Serving
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                        </select>
+                    </div>
+                    <Button className='close-button' onClick={this.hideModal}>Close</Button>
+                </div>
             </Modal.Footer>
         )
 
         const notLoggedIn = (
             <Modal.Footer className='not-logged-in'>
-                <Button><a href="http://localhost:3001/auth">Log in to continue</a></Button>
-                
-                <Button onClick={this.hideModal}>Close</Button>
+                <div className="modal-button-box">
+                    <Button><a href="http://localhost:3001/auth">Log in to continue</a></Button>
+                    
+                    <Button onClick={this.hideModal}>Close</Button>
+                </div>
             </Modal.Footer>
         )
         
@@ -98,6 +110,8 @@ class Modals extends Component {
                     }
                     
                 </Button>
+
+                <SweetAlert show={this.state.showAlert} success title="Recipe added to cart!" onConfirm={this.hideModal}></SweetAlert>
 
                 <Modal bsSize={'lg'}
                     {...this.props}   
