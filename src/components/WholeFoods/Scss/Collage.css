@@ -1,6 +1,21 @@
 .collage-main {
   font-family: "Poppins", sans-serif;
   background-color: black; }
+  .collage-main .spin-box {
+    opacity: 0; }
+    .collage-main .spin-box.is-visible {
+      animation: Items 600ms ease-in forwards; }
+
+@keyframes Items {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) rotateY(90deg); }
+  60% {
+    transform: scale(1.4); }
+  90% {
+    transform: scale(0.9); }
+  100% {
+    opacity: 1; } }
   .collage-main .icons {
     display: flex;
     justify-content: space-between;

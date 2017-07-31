@@ -1,8 +1,19 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 
 import './Scss/Food.css';
 
 class Food extends Component {
+
+    componentDidMount(){
+        $('.spin-box').each(function(i){
+            setTimeout(function(){
+                $('.spin-box').eq(i).addClass('is-visible');
+            }, 500*i );
+        })
+    }
+
+
     render() {
         return (
             <div className='food-main'>
@@ -15,15 +26,13 @@ class Food extends Component {
                 </section>
                 <section className='nutrients row'>
                     <div className='col-sm-4 left-column'>
-                        <div className='veggies'>
+                        <div className='veggies spin-box'>
 
                         </div>
-                        <div className='fruits'>
-                            FRUITS
-                        </div>
+                        <div className='fruits spin-box'></div>
                     </div>
                     <div className='col-sm-8 right-column'>
-                        <div className='fats row'>
+                        <div className='fats row spin-box'>
                             <div className='overlay col-md-8'>
                                 <p className=''>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley.</p>
                                 <p className=''>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley.</p>
@@ -32,7 +41,7 @@ class Food extends Component {
                         </div>
                         <div className='row staples-column'>
                             <div className='protein-column col-sm-7'>
-                                <div className='protein'>
+                                <div className='protein spin-box'>
                                     <div className='overlay'>
                                         <h1>PROTEINS</h1>
                                         <p>Spirulina</p>
@@ -54,9 +63,9 @@ class Food extends Component {
                                     <circle className='circle-5'>Nutritional Yeast</circle>
                                     <circle className='circle-6'>Beans</circle> */}
                                 </div>
-                                <div className='links'></div>
+                                <div className='links spin-box'></div>
                             </div>
-                            <div className='grains col-sm-5'></div>
+                            <div className='grains col-sm-5 spin-box'></div>
                         </div>
                     </div>
                 </section>
