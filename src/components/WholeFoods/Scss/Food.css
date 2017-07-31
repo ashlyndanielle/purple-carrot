@@ -94,7 +94,7 @@
         padding: 0; }
         .food-main .nutrients .right-column .fats .overlay {
           height: 100%;
-          color: beige;
+          color: #E8D6C3;
           padding: 20px;
           display: flex;
           justify-content: space-around; }
@@ -145,9 +145,14 @@
               border-radius: 50%;
               margin: 10px; }
           .food-main .nutrients .right-column .staples-column .protein-column .links {
-            background: #263f27;
+            background: url("../../../Images/nutrition/grain.jpg");
+            background-size: cover;
+            background-position: center;
             height: 30%;
             width: 100%; }
+            .food-main .nutrients .right-column .staples-column .protein-column .links div {
+              height: 100%;
+              width: 100%; }
         .food-main .nutrients .right-column .staples-column .grains {
           height: 100%;
           padding: 0;

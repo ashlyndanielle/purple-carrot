@@ -129,7 +129,7 @@
                     // background: rgba(50, 70, 100, 0.8);
                     // width: 100%;
                     height: 100%;
-                    color: beige;
+                    color: #E8D6C3;
                     padding: 20px;
                     display: flex;
                     justify-content: space-around;
@@ -200,12 +200,19 @@
                     }
 
                     .links {
-                        // background: url('../../../Images/nutrition/pears.jpg');
-                        // background-size: cover;
-                        // background-position: center;
-                        background: rgb(38, 63, 39);
+                        background: url('../../../Images/nutrition/grain.jpg');
+                        background-size: cover;
+                        background-position: center;
+                        // background: rgb(38, 63, 39);
                         height: 30%;
                         width: 100%;
+
+                        div {
+                            // background: rgba(#533256,0.2);
+                            height: 100%;
+                            width: 100%;
+                            // opacity: 0.5;
+                        }
                     }
                 }
 
@@ -218,6 +225,7 @@
                     background: url('../../../Images/nutrition/india.jpg');
                     background-size: cover;
                     background-position: left;
+
                 }
             }
 

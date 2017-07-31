@@ -34,8 +34,8 @@ class Food extends Component {
                     <div className='col-sm-8 right-column'>
                         <div className='fats row spin-box'>
                             <div className='overlay col-md-8'>
-                                <p className=''>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley.</p>
-                                <p className=''>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley.</p>
+                                <p className=''>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley.  Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper.</p>
+                                <p className=''>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley.  Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper.</p>
                             </div>
                             <div className='col-md-4 hidden-xs hidden-sm'></div>
                         </div>
@@ -56,16 +56,13 @@ class Food extends Component {
                                         <p>Quinoa</p>
                                         <p>Groats</p>
                                     </div>
-                                    {/* <circle className='circle-1'>Tofu</circle>
-                                    <circle className='circle-2'>Tempeh</circle>
-                                    <circle className='circle-3'>Quinoa</circle>
-                                    <circle className='circle-4'>Groats</circle>
-                                    <circle className='circle-5'>Nutritional Yeast</circle>
-                                    <circle className='circle-6'>Beans</circle> */}
                                 </div>
-                                <div className='links spin-box'></div>
+                                <div className='links spin-box'>
+                                    <div></div>
+                                </div>
                             </div>
-                            <div className='grains col-sm-5 spin-box'></div>
+                            <div className='grains col-sm-5 spin-box'>
+                            </div>
                         </div>
                     </div>
                 </section>
