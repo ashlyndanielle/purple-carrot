@@ -116,14 +116,15 @@
         .collage-main .collage-section .right-side .right-bottom .right-inner-bottom {
           padding: 0;
           margin: 0;
-          height: 35%;
-          background-color: slategrey; }
+          height: 35%; }
           .collage-main .collage-section .right-side .right-bottom .right-inner-bottom div {
             width: 50%;
             padding: 0;
             margin: 0;
-            height: 100%; }
+            height: 100%;
+            background: sienna; }
             .collage-main .collage-section .right-side .right-bottom .right-inner-bottom div img {
+              opacity: 0.8;
               width: 100%;
               height: 100%; }
         .collage-main .collage-section .right-side .right-bottom .right-right-container {

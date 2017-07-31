@@ -1,6 +1,6 @@
 import React from 'react';
 
-import carrot from '../../Images/nutrition/carrots.webp';
+import forks from '../../Images/nutrition/forks.jpg';
 import vegan from '../../Images/nutrition/vegans-doit.webp';
 
 import './Scss/Collage.css';
@@ -31,7 +31,9 @@ const Collage = () => {
                             <div className='right-inner-top'>WHAT DO VEGANS EAT</div>
                             <div className='right-inner-bottom row'>
                                 <div className='col-sm-6'>
-                                    <img className='logo second' src={carrot}/>
+                                    <a href="https://www.forksoverknives.com/what-to-eat/#gs.dHO9lE4">
+                                        <img className='logo second' src={forks}/>
+                                    </a>
                                 </div>
                                 <div className='col-sm-6'>
                                     <img className='logo first' src={vegan}/>
