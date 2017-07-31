@@ -1,0 +1,123 @@
+.collage-main {
+  font-family: "Poppins", sans-serif; }
+  .collage-main .icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20%;
+    height: 55px;
+    width: 100%;
+    background-color: black; }
+  .collage-main .icon-div1 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../../Images/nutrition/apple.png");
+    height: 50px;
+    width: 50px;
+    filter: invert(100%); }
+  .collage-main .icon-div2 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../../Images/nutrition/heart.png");
+    height: 50px;
+    width: 50px;
+    filter: invert(100%); }
+  .collage-main .icon-div3 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../../Images/nutrition/hands.jpeg");
+    height: 50px;
+    width: 50px;
+    filter: invert(100%); }
+  .collage-main .icon-div4 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../../Images/nutrition/steth.png");
+    height: 50px;
+    width: 50px;
+    filter: invert(100%); }
+  .collage-main .icon-div5 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../../Images/nutrition/cross.png");
+    height: 55px;
+    width: 50px;
+    filter: invert(100%); }
+  .collage-main .collage-section {
+    height: 120vh;
+    width: 100vw;
+    margin: 0; }
+    .collage-main .collage-section .left-side {
+      height: 100%;
+      margin: 0;
+      padding: 0; }
+      .collage-main .collage-section .left-side .left-top {
+        margin: 0;
+        background-image: url("../../../Images/nutrition/boxer.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 50%;
+        width: 100%;
+        margin: 0; }
+      .collage-main .collage-section .left-side .left-bottom {
+        margin: 0;
+        background-color: lightseagreen;
+        height: 50%;
+        width: 100%;
+        margin: 0; }
+    .collage-main .collage-section .right-side {
+      margin: 0;
+      height: 100%;
+      padding: 0; }
+      .collage-main .collage-section .right-side .right-top {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 30%;
+        background-image: url("../../../Images/nutrition/garden.jpg");
+        background-size: cover;
+        background-position: center; }
+      .collage-main .collage-section .right-side .right-bottom {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 70%; }
+        .collage-main .collage-section .right-side .right-bottom .right-inner-container {
+          padding: 0;
+          margin: 0;
+          height: 100%; }
+        .collage-main .collage-section .right-side .right-bottom .right-inner-top {
+          padding: 0;
+          margin: 0;
+          height: 65%;
+          background-color: seagreen; }
+        .collage-main .collage-section .right-side .right-bottom .right-inner-bottom {
+          padding: 0;
+          margin: 0;
+          height: 35%;
+          background-color: beige; }
+        .collage-main .collage-section .right-side .right-bottom .right-right-container {
+          height: 100%;
+          padding: 20px;
+          margin: 0;
+          background-image: url("../../../Images/nutrition/more-dirt.jpg");
+          background-size: cover;
+          background-position: center;
+          color: #E8D6C3;
+          text-align: center; }
+          .collage-main .collage-section .right-side .right-bottom .right-right-container .overlay {
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            overflow: scroll;
+            background-color: rgba(155, 128, 101, 0.5); }
+            .collage-main .collage-section .right-side .right-bottom .right-right-container .overlay p {
+              line-height: 1.7em;
+              font-size: 18px;
+              padding-bottom: 30px; }
+            .collage-main .collage-section .right-side .right-bottom .right-right-container .overlay h1 {
+              font-size: 24px;
+              padding-top: 30px;
+              margin: 0; }

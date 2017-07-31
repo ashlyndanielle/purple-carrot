@@ -1,0 +1,18 @@
+.nutrition-header-main {
+  width: 100%;
+  height: 400px;
+  background-image: url("../../../Images/nutrition/gifts-image.jpg");
+  background-size: cover;
+  background-position: bottom;
+  font-family: "Indie Flower", cursive;
+  font-size: 70px;
+  text-shadow: 1px 1px black;
+  text-align: center;
+  line-height: 1.3em;
+  letter-spacing: 10px;
+  margin: 0px; }
+  .nutrition-header-main .title {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
