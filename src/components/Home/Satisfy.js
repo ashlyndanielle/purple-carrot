@@ -12,7 +12,7 @@ const Satisfy = () => {
                 <img src={hunger} alt=""/>
             </div>
             <div className='button-wrapper'>
-                <Link to='/menu' className='button'>TRY IT NOW</Link>
+                <Link to='/recipes' className='button'>TRY IT NOW</Link>
             </div>
         </div>
     );

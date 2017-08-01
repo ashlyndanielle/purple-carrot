@@ -37,3 +37,21 @@
         bottom: 0;
     }
 }
+
+@media (max-width: 1160px){
+    .title {
+        font-size: 75px !important;
+    }
+}
+
+@media (max-width: 1034px){
+    .title {
+        font-size: 65px !important;
+    }
+}
+
+@media (max-width: 920px){
+    .title {
+        font-size: 55px !important;
+    }
+}
