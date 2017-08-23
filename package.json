@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "main": "server/server.js",
-  "proxy": "http://localhost:3001",
   "dependencies": {
     "auth0-lock": "^10.19.0",
     "axios": "^0.16.2",

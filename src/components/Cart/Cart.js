@@ -31,7 +31,7 @@ class Menu extends Component {
     componentDidMount() {
         this.getCart()
 
-        axios.get('http://localhost:3001/auth/me')
+        axios.get('/auth/me')
             .then( response => {
                 this.setState({
                     loggedIn: response.data
@@ -41,14 +41,13 @@ class Menu extends Component {
     }   
     
     getCart() {
-        axios.get('http://localhost:3001/getcart')
+        axios.get('/getcart')
             .then( response => {
                 console.log("RAWR",response.data)
                 // this.setState({
                 //     cart: response.data
                 // })
                 if (response.data.length === 0) {
-                    console.log("meow");
                     this.setState({
                         fullCart: false
                     })
@@ -60,7 +59,7 @@ class Menu extends Component {
                 }
             })
 
-        axios.get('http://localhost:3001/gettotal')
+        axios.get('/gettotal')
             .then( response => {
                 console.log('CART TOTAL', response.data[0].sum)
                 this.setState({
@@ -71,7 +70,7 @@ class Menu extends Component {
 
     deleteItem(id) {
 
-        axios.delete('http://localhost:3001/deleteitem', {params: {recipesid: id}})
+        axios.delete('/deleteitem', {params: {recipesid: id}})
             .then( () => {
                 console.log("HEYYYYYY");
                 setTimeout(() => {
@@ -96,7 +95,7 @@ class Menu extends Component {
             recipeid: id
         }
 
-        axios.put('http://localhost:3001/updatequantity', config)
+        axios.put('/updatequantity', config)
             .then(response => {
                 this.getCart()            
             })

@@ -13,7 +13,7 @@ class CartButtons extends Component {
     onToken = (token) => {
         token.card = void 0;
         console.log('token', token);
-        axios.post('http://localhost:3001/payment', { token, amount: this.props.cartTotal } ).then(response => {
+        axios.post('/payment', { token, amount: this.props.cartTotal } ).then(response => {
             this.props.history.push('/')
         });
     }

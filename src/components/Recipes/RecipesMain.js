@@ -47,7 +47,7 @@ class RecipesMain extends Component {
         // this sets loggedin as the user object returned from auth0
         this.authenticationCall();
         // this is my database call to get my recipes
-        axios.get('http://localhost:3001/getRecipes')
+        axios.get('/getRecipes')
             .then( response => {
                 this.setState({
                     mealPlans: response.data
@@ -66,7 +66,7 @@ class RecipesMain extends Component {
             price: meal.price
         }
 
-        axios.post('http://localhost:3001/addtocart', config)
+        axios.post('/addtocart', config)
             .then(response => {
                 console.log('CONFIG NAME', config.name);
                 // console.log('CONFIG', config)

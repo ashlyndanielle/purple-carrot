@@ -8,13 +8,13 @@ const cors = require('cors');
 const config = require('./config.js');
 const port = config.port;
 const stripe = require('stripe')(config.secret_key);
-
+const path = require('path');
 const app = express();
 
-app.use(express.static(__dirname + '/../build'));
 // Middleware
 app.use(bodyParser.json());
 app.use(cors({origin: 'http://localhost:3000'}))
+app.use(express.static(__dirname + '/../build'));
 
 // Middleware - Express Session
 app.use(session({
@@ -177,7 +177,7 @@ app.post('/payment', function(req, res, next){
     app.get('/auth', passport.authenticate('auth0'));
     // #2: this redirects back to my recipes page
     app.get('/auth/callback', passport.authenticate('auth0', 
-    { successRedirect: 'http://localhost:3000/recipes'}));
+    { successRedirect: '/recipes'}));
     // #3: this gives me the user that is logged in
     app.get('/auth/me', function(req, res) {
         if (!req.user) return res.status(200).send('');
@@ -186,12 +186,14 @@ app.post('/payment', function(req, res, next){
     // #4
     app.get('/auth/logout', function(req, res) {
         req.logout();
-        res.redirect('http://localhost:3000/');
+        res.redirect('/');
     })
 });
 
 
-
+app.get('*', function(req, res){
+    res.sendFile(path.join(__dirname, './../build/index.html'));
+})
 app.listen(port, () => {
     console.log(`Delivering fresh, nutritious goodies on port ${port}`)
 })

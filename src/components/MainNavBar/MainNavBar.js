@@ -48,23 +48,14 @@ class MainNavBar extends Component {
 
         const loggedIn = (
                 <NavDropdown eventKey={5} title="Account" id="basic-nav-dropdown">
-                    <MenuItem eventKey={3.2} href="http://localhost:3001/auth/logout">Logout</MenuItem>
+                    <MenuItem eventKey={3.2} href="/auth/logout">Logout</MenuItem>
                     <MenuItem eventKey={3.2}>
                         <Link to='/cart' className='nav-links'>Cart</Link>
                     </MenuItem>
                 </NavDropdown>
         )
-        const loggedOut= (<MenuItem eventKey={5.1} href="http://localhost:3001/auth">Login</MenuItem>)
+        const loggedOut= (<MenuItem eventKey={5.1} href="/auth">Login</MenuItem>)
 
-        // let isLoggedIn = false;
-
-        // if (this.state.loggedInUser && this.state.loggedInUser.userid) {
-        //     console.log('user is logged in', this.state.loggedInUser)
-        //     isLoggedIn = <MenuItem eventKey={3.2} href="http://localhost:3001/auth/logout">Logout</MenuItem>
-        // } else {
-        //     console.log('user is logged out', this.state.loggedInUser)
-        //     isLoggedIn = <MenuItem eventKey={3.1} href="http://localhost:3001/auth">Login</MenuItem>;
-        // }
 
         return (
             <div className='main-nav-container'>

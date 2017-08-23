@@ -44,7 +44,6 @@ class Modals extends Component {
         this.setState({
             showAlert: true
         })
-        // this.hideModal();
     }
 
     onHoverFn() {
@@ -94,7 +93,7 @@ class Modals extends Component {
         const notLoggedIn = (
             <Modal.Footer className='not-logged-in'>
                 <div className="modal-button-box">
-                    <Button><a href="http://localhost:3001/auth">Log in to continue</a></Button>
+                    <Button><a href="/auth">Log in to continue</a></Button>
                     
                     <Button onClick={this.hideModal}>Close</Button>
                 </div>

@@ -11,7 +11,7 @@ class Checkout extends Component {
     onToken = (token) => {
         token.card = void 0;
         console.log('token', token);
-        axios.post('http://localhost:3001/payment', { token, amount: 100 } ).then(response => {
+        axios.post('/payment', { token, amount: 100 } ).then(response => {
             alert('Nutritious goodies on their way!')
             
         });
